@@ -7,7 +7,7 @@
 
 `timescale 1 ns / 1 ps 
 
-(* CORE_GENERATION_INFO="ms_ms,hls_ip_2020_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020-clg400-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=dataflow,HLS_SYN_CLOCK=7.297000,HLS_SYN_LAT=-1,HLS_SYN_TPT=-1,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=3046,HLS_SYN_LUT=4482,HLS_VERSION=2020_2}" *)
+(* CORE_GENERATION_INFO="ms_ms,hls_ip_2020_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020-clg400-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=dataflow,HLS_SYN_CLOCK=7.297000,HLS_SYN_LAT=-1,HLS_SYN_TPT=-1,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=3053,HLS_SYN_LUT=4505,HLS_VERSION=2020_2}" *)
 
 module ms (
         s_axi_control_AWVALID,
@@ -363,10 +363,4 @@ assign start_for_Loop_VITIS_LOOP_58_2_proc4_U0_din = 1'b1;
 
 assign start_for_RGB_to_binary_stream_U0_din = 1'b1;
 
-
-// synthesis translate_off
-`include "ms_hls_deadlock_detector.vh"
-// synthesis translate_on
-
 endmodule //ms
-

@@ -42,13 +42,13 @@ architecture behav of ms_RGB_to_binary_stream is
     constant ap_const_boolean_0 : BOOLEAN := false;
     constant ap_const_lv1_0 : STD_LOGIC_VECTOR (0 downto 0) := "0";
     constant ap_const_lv1_1 : STD_LOGIC_VECTOR (0 downto 0) := "1";
-    constant ap_const_lv14_0 : STD_LOGIC_VECTOR (13 downto 0) := "00000000000000";
+    constant ap_const_lv21_0 : STD_LOGIC_VECTOR (20 downto 0) := "000000000000000000000";
     constant ap_const_lv64_0 : STD_LOGIC_VECTOR (63 downto 0) := "0000000000000000000000000000000000000000000000000000000000000000";
     constant ap_const_lv64_3FBD2F1A9FBE76C9 : STD_LOGIC_VECTOR (63 downto 0) := "0011111110111101001011110001101010011111101111100111011011001001";
     constant ap_const_lv64_3FE2C8B439581062 : STD_LOGIC_VECTOR (63 downto 0) := "0011111111100010110010001011010000111001010110000001000001100010";
-    constant ap_const_lv14_1 : STD_LOGIC_VECTOR (13 downto 0) := "00000000000001";
-    constant ap_const_lv14_3840 : STD_LOGIC_VECTOR (13 downto 0) := "11100001000000";
-    constant ap_const_lv14_383F : STD_LOGIC_VECTOR (13 downto 0) := "11100000111111";
+    constant ap_const_lv21_1 : STD_LOGIC_VECTOR (20 downto 0) := "000000000000000000001";
+    constant ap_const_lv21_1FA400 : STD_LOGIC_VECTOR (20 downto 0) := "111111010010000000000";
+    constant ap_const_lv21_1FA3FF : STD_LOGIC_VECTOR (20 downto 0) := "111111010001111111111";
     constant ap_const_lv32_10 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000010000";
     constant ap_const_lv32_17 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000010111";
     constant ap_const_lv32_8 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000001000";
@@ -89,8 +89,8 @@ attribute shreg_extract : string;
     signal out_bw_blk_n : STD_LOGIC;
     signal ap_enable_reg_pp0_iter32 : STD_LOGIC := '0';
     signal icmp_ln14_reg_459_pp0_iter31_reg : STD_LOGIC_VECTOR (0 downto 0);
-    signal pixel_reg_113 : STD_LOGIC_VECTOR (13 downto 0);
-    signal pixel_1_fu_149_p2 : STD_LOGIC_VECTOR (13 downto 0);
+    signal pixel_reg_113 : STD_LOGIC_VECTOR (20 downto 0);
+    signal pixel_1_fu_149_p2 : STD_LOGIC_VECTOR (20 downto 0);
     signal ap_enable_reg_pp0_iter0 : STD_LOGIC := '0';
     signal ap_block_state2_pp0_stage0_iter0 : BOOLEAN;
     signal ap_block_state3_pp0_stage0_iter1 : BOOLEAN;
@@ -976,7 +976,7 @@ begin
             if (((ap_enable_reg_pp0_iter0 = ap_const_logic_1) and (ap_const_boolean_0 = ap_block_pp0_stage0_11001) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0) and (icmp_ln14_fu_155_p2 = ap_const_lv1_0))) then 
                 pixel_reg_113 <= pixel_1_fu_149_p2;
             elsif ((not(((real_start = ap_const_logic_0) or (ap_done_reg = ap_const_logic_1))) and (ap_const_logic_1 = ap_CS_fsm_state1))) then 
-                pixel_reg_113 <= ap_const_lv14_0;
+                pixel_reg_113 <= ap_const_lv21_0;
             end if; 
         end if;
     end process;
@@ -1353,7 +1353,7 @@ begin
     end process;
 
     grp_fu_146_p0 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(r_reg_473),64));
-    icmp_ln14_fu_155_p2 <= "1" when (pixel_reg_113 = ap_const_lv14_3840) else "0";
+    icmp_ln14_fu_155_p2 <= "1" when (pixel_reg_113 = ap_const_lv21_1FA400) else "0";
     icmp_ln323_fu_228_p2 <= "1" when (trunc_ln306_fu_206_p1 = ap_const_lv63_0) else "0";
     icmp_ln327_fu_244_p2 <= "1" when (exp_fu_210_p4 = ap_const_lv11_433) else "0";
     icmp_ln329_fu_250_p2 <= "1" when (signed(sh_amt_fu_234_p2) > signed(ap_const_lv12_0)) else "0";
@@ -1434,7 +1434,7 @@ begin
 
     p_Result_1_fu_259_p3 <= (ap_const_lv1_1 & trunc_ln315_fu_256_p1);
     p_Result_s_fu_415_p3 <= reg_reg_518_pp0_iter31_reg(63 downto 63);
-    pixel_1_fu_149_p2 <= std_logic_vector(unsigned(pixel_reg_113) + unsigned(ap_const_lv14_1));
+    pixel_1_fu_149_p2 <= std_logic_vector(unsigned(pixel_reg_113) + unsigned(ap_const_lv21_1));
 
     real_start_assign_proc : process(ap_start, start_full_n, start_once_reg)
     begin
@@ -1461,7 +1461,7 @@ begin
         end if; 
     end process;
 
-    temp_BW_pkt_last_fu_161_p2 <= "1" when (pixel_reg_113 = ap_const_lv14_383F) else "0";
+    temp_BW_pkt_last_fu_161_p2 <= "1" when (pixel_reg_113 = ap_const_lv21_1FA3FF) else "0";
     tmp_1_fu_440_p4 <= ((temp_BW_pkt_last_reg_463_pp0_iter31_reg & ap_const_lv7_0) & in_BW_V_fu_434_p2);
     tmp_3_fu_281_p4 <= sh_amt_1_fu_276_p2(9 downto 3);
     trunc_ln306_fu_206_p1 <= reg_fu_203_p1(63 - 1 downto 0);

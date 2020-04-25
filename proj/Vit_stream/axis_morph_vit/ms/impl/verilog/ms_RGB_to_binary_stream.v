@@ -67,8 +67,8 @@ reg   [0:0] icmp_ln14_reg_459;
 reg    out_bw_blk_n;
 reg    ap_enable_reg_pp0_iter32;
 reg   [0:0] icmp_ln14_reg_459_pp0_iter31_reg;
-reg   [13:0] pixel_reg_113;
-wire   [13:0] pixel_1_fu_149_p2;
+reg   [20:0] pixel_reg_113;
+wire   [20:0] pixel_1_fu_149_p2;
 reg    ap_enable_reg_pp0_iter0;
 wire    ap_block_state2_pp0_stage0_iter0;
 reg    ap_block_state3_pp0_stage0_iter1;
@@ -792,7 +792,7 @@ always @ (posedge ap_clk) begin
     if (((ap_enable_reg_pp0_iter0 == 1'b1) & (1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0) & (icmp_ln14_fu_155_p2 == 1'd0))) begin
         pixel_reg_113 <= pixel_1_fu_149_p2;
     end else if ((~((real_start == 1'b0) | (ap_done_reg == 1'b1)) & (1'b1 == ap_CS_fsm_state1))) begin
-        pixel_reg_113 <= 14'd0;
+        pixel_reg_113 <= 21'd0;
     end
 end
 
@@ -1221,7 +1221,7 @@ assign grp_fu_143_p0 = op2_fu_187_p3;
 
 assign grp_fu_146_p0 = r_reg_473;
 
-assign icmp_ln14_fu_155_p2 = ((pixel_reg_113 == 14'd14400) ? 1'b1 : 1'b0);
+assign icmp_ln14_fu_155_p2 = ((pixel_reg_113 == 21'd2073600) ? 1'b1 : 1'b0);
 
 assign icmp_ln323_fu_228_p2 = ((trunc_ln306_fu_206_p1 == 63'd0) ? 1'b1 : 1'b0);
 
@@ -1263,7 +1263,7 @@ assign p_Result_1_fu_259_p3 = {{1'd1}, {trunc_ln315_fu_256_p1}};
 
 assign p_Result_s_fu_415_p3 = reg_reg_518_pp0_iter31_reg[32'd63];
 
-assign pixel_1_fu_149_p2 = (pixel_reg_113 + 14'd1);
+assign pixel_1_fu_149_p2 = (pixel_reg_113 + 21'd1);
 
 assign reg_fu_203_p1 = val_reg_513;
 
@@ -1277,7 +1277,7 @@ assign shl_ln339_fu_380_p2 = in_grey_V_12_reg_524_pp0_iter30_reg << sh_amt_1cast
 
 assign start_out = real_start;
 
-assign temp_BW_pkt_last_fu_161_p2 = ((pixel_reg_113 == 14'd14399) ? 1'b1 : 1'b0);
+assign temp_BW_pkt_last_fu_161_p2 = ((pixel_reg_113 == 21'd2073599) ? 1'b1 : 1'b0);
 
 assign tmp_1_fu_440_p4 = {{{temp_BW_pkt_last_reg_463_pp0_iter31_reg}, {7'd0}}, {in_BW_V_fu_434_p2}};
 

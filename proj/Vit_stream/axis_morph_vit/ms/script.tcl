@@ -20,7 +20,7 @@ add_files -tb axis_morph_tb -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unkn
 open_solution "ms" -flow_target vivado
 set_part {xc7z020-clg400-1}
 create_clock -period 10 -name default
-config_export -format sysgen -output C:/Xil_proj/315/proj/IP/ms/msV1.1 -rtl verilog
+config_export -format ip_catalog -output C:/Xil_proj/315/proj/IP/ms/msV1.1 -rtl verilog
 source "./axis_morph_vit/ms/directives.tcl"
 csim_design -clean
 csynth_design

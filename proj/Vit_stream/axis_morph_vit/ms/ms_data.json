@@ -71,7 +71,7 @@
   "HlsSolution": {
     "FlowTarget": "vivado",
     "ConfigTcl": [
-      "config_export -format=sysgen",
+      "config_export -format=ip_catalog",
       "config_export -output=C:\/Xil_proj\/315\/proj\/IP\/ms\/msV1.1",
       "config_export -rtl=verilog"
     ],
@@ -749,10 +749,10 @@
       },
       "RGB_to_binary_stream": {
         "Latency": {
-          "LatencyBest": "14433",
-          "LatencyAvg": "14433",
-          "LatencyWorst": "14433",
-          "PipelineII": "14433",
+          "LatencyBest": "2073633",
+          "LatencyAvg": "2073633",
+          "LatencyWorst": "2073633",
+          "PipelineII": "2073633",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
@@ -763,8 +763,8 @@
         },
         "Loops": [{
             "Name": "BW_LOOP",
-            "TripCount": "14400",
-            "Latency": "14431",
+            "TripCount": "2073600",
+            "Latency": "2073631",
             "PipelineII": "1",
             "PipelineDepth": "33"
           }],
@@ -772,10 +772,10 @@
           "DSP": "28",
           "AVAIL_DSP": "220",
           "UTIL_DSP": "12",
-          "FF": "2725",
+          "FF": "2732",
           "AVAIL_FF": "106400",
           "UTIL_FF": "2",
-          "LUT": "4052",
+          "LUT": "4067",
           "AVAIL_LUT": "53200",
           "UTIL_LUT": "7",
           "BRAM_18K": "0",
@@ -798,7 +798,7 @@
         "Timing": {
           "Target": "10.00",
           "Uncertainty": "2.70",
-          "Estimate": "3.634"
+          "Estimate": "4.601"
         },
         "Loops": [{
             "Name": "VITIS_LOOP_58_2",
@@ -811,7 +811,7 @@
           "FF": "6",
           "AVAIL_FF": "106400",
           "UTIL_FF": "~0",
-          "LUT": "64",
+          "LUT": "72",
           "AVAIL_LUT": "53200",
           "UTIL_LUT": "~0",
           "BRAM_18K": "0",
@@ -846,10 +846,10 @@
           "DSP": "28",
           "AVAIL_DSP": "220",
           "UTIL_DSP": "12",
-          "FF": "3046",
+          "FF": "3053",
           "AVAIL_FF": "106400",
           "UTIL_FF": "2",
-          "LUT": "4482",
+          "LUT": "4505",
           "AVAIL_LUT": "53200",
           "UTIL_LUT": "8",
           "URAM": "0",
@@ -862,7 +862,7 @@
   "GenerateBdFiles": "1",
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2020-04-25 18:29:22 +0100",
+    "Time": "2020-04-25 19:49:49 +0100",
     "ToolName": "vivado_hls",
     "ToolVersion": "2020.2"
   }

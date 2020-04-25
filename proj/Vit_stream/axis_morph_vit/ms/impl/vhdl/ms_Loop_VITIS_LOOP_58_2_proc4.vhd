@@ -48,6 +48,7 @@ architecture behav of ms_Loop_VITIS_LOOP_58_2_proc4 is
     constant ap_const_lv2_0 : STD_LOGIC_VECTOR (1 downto 0) := "00";
     constant ap_const_lv5_0 : STD_LOGIC_VECTOR (4 downto 0) := "00000";
     constant ap_const_lv6_0 : STD_LOGIC_VECTOR (5 downto 0) := "000000";
+    constant ap_const_lv32_FF : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000011111111";
     constant ap_const_lv32_8 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000001000";
     constant ap_const_lv32_2 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000010";
 
@@ -68,12 +69,12 @@ attribute shreg_extract : string;
     signal ap_block_state2_pp0_stage0_iter0 : BOOLEAN;
     signal ap_block_state3_pp0_stage0_iter1 : BOOLEAN;
     signal ap_block_pp0_stage0_11001 : BOOLEAN;
-    signal temp_out_BW_pkt_last_fu_97_p3 : STD_LOGIC_VECTOR (0 downto 0);
+    signal temp_out_BW_pkt_last_fu_103_p3 : STD_LOGIC_VECTOR (0 downto 0);
     signal ap_block_state1 : BOOLEAN;
     signal ap_block_pp0_stage0_subdone : BOOLEAN;
     signal ap_condition_pp0_flush_enable : STD_LOGIC;
     signal ap_block_pp0_stage0_01001 : BOOLEAN;
-    signal temp_out_BW_pkt_pix_V_fu_88_p1 : STD_LOGIC_VECTOR (0 downto 0);
+    signal temp_out_BW_pkt_pix_V_fu_90_p1 : STD_LOGIC_VECTOR (0 downto 0);
     signal ap_CS_fsm_state4 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state4 : signal is "none";
     signal regslice_both_out_stream_V_data_V_U_apdone_blk : STD_LOGIC;
@@ -353,9 +354,9 @@ begin
     end process;
 
 
-    ap_condition_pp0_flush_enable_assign_proc : process(ap_CS_fsm_pp0_stage0, temp_out_BW_pkt_last_fu_97_p3, ap_block_pp0_stage0_subdone)
+    ap_condition_pp0_flush_enable_assign_proc : process(ap_CS_fsm_pp0_stage0, temp_out_BW_pkt_last_fu_103_p3, ap_block_pp0_stage0_subdone)
     begin
-        if (((temp_out_BW_pkt_last_fu_97_p3 = ap_const_lv1_1) and (ap_const_boolean_0 = ap_block_pp0_stage0_subdone) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0))) then 
+        if (((temp_out_BW_pkt_last_fu_103_p3 = ap_const_lv1_1) and (ap_const_boolean_0 = ap_block_pp0_stage0_subdone) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0))) then 
             ap_condition_pp0_flush_enable <= ap_const_logic_1;
         else 
             ap_condition_pp0_flush_enable <= ap_const_logic_0;
@@ -433,7 +434,9 @@ begin
         end if; 
     end process;
 
-    out_stream_TDATA_int_regslice <= std_logic_vector(IEEE.numeric_std.resize(unsigned(temp_out_BW_pkt_pix_V_fu_88_p1),32));
+    out_stream_TDATA_int_regslice <= 
+        ap_const_lv32_FF when (temp_out_BW_pkt_pix_V_fu_90_p1(0) = '1') else 
+        ap_const_lv32_0;
     out_stream_TLAST_int_regslice <= in_BW_stream_var_dout(8 downto 8);
     out_stream_TVALID <= regslice_both_out_stream_V_data_V_U_vld_out;
 
@@ -446,6 +449,6 @@ begin
         end if; 
     end process;
 
-    temp_out_BW_pkt_last_fu_97_p3 <= in_BW_stream_var_dout(8 downto 8);
-    temp_out_BW_pkt_pix_V_fu_88_p1 <= in_BW_stream_var_dout(1 - 1 downto 0);
+    temp_out_BW_pkt_last_fu_103_p3 <= in_BW_stream_var_dout(8 downto 8);
+    temp_out_BW_pkt_pix_V_fu_90_p1 <= in_BW_stream_var_dout(1 - 1 downto 0);
 end behav;

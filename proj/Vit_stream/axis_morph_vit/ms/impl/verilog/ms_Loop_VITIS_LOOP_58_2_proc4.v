@@ -70,12 +70,12 @@ reg    ap_enable_reg_pp0_iter1;
 reg    ap_block_state2_pp0_stage0_iter0;
 reg    ap_block_state3_pp0_stage0_iter1;
 reg    ap_block_pp0_stage0_11001;
-wire   [0:0] temp_out_BW_pkt_last_fu_97_p3;
+wire   [0:0] temp_out_BW_pkt_last_fu_103_p3;
 reg    ap_block_state1;
 reg    ap_block_pp0_stage0_subdone;
 reg    ap_condition_pp0_flush_enable;
 reg    ap_block_pp0_stage0_01001;
-wire   [0:0] temp_out_BW_pkt_pix_V_fu_88_p1;
+wire   [0:0] temp_out_BW_pkt_pix_V_fu_90_p1;
 wire    ap_CS_fsm_state4;
 wire    regslice_both_out_stream_V_data_V_U_apdone_blk;
 reg   [2:0] ap_NS_fsm;
@@ -257,7 +257,7 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (*) begin
-    if (((temp_out_BW_pkt_last_fu_97_p3 == 1'd1) & (1'b0 == ap_block_pp0_stage0_subdone) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+    if (((temp_out_BW_pkt_last_fu_103_p3 == 1'd1) & (1'b0 == ap_block_pp0_stage0_subdone) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         ap_condition_pp0_flush_enable = 1'b1;
     end else begin
         ap_condition_pp0_flush_enable = 1'b0;
@@ -393,14 +393,14 @@ end
 
 assign ap_enable_pp0 = (ap_idle_pp0 ^ 1'b1);
 
-assign out_stream_TDATA_int_regslice = temp_out_BW_pkt_pix_V_fu_88_p1;
+assign out_stream_TDATA_int_regslice = ((temp_out_BW_pkt_pix_V_fu_90_p1[0:0] == 1'b1) ? 32'd255 : 32'd0);
 
 assign out_stream_TLAST_int_regslice = in_BW_stream_var_dout[32'd8];
 
 assign out_stream_TVALID = regslice_both_out_stream_V_data_V_U_vld_out;
 
-assign temp_out_BW_pkt_last_fu_97_p3 = in_BW_stream_var_dout[32'd8];
+assign temp_out_BW_pkt_last_fu_103_p3 = in_BW_stream_var_dout[32'd8];
 
-assign temp_out_BW_pkt_pix_V_fu_88_p1 = in_BW_stream_var_dout[0:0];
+assign temp_out_BW_pkt_pix_V_fu_90_p1 = in_BW_stream_var_dout[0:0];
 
 endmodule //ms_Loop_VITIS_LOOP_58_2_proc4

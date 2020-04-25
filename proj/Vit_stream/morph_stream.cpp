@@ -61,7 +61,11 @@ void ms( stream_32 			 &in_stream,
 		temp_out_BW = temp_out_BW_pkt.pix;
 
 		temp_out_packet.last = temp_out_BW_pkt.last;
-		temp_out_packet.data = ap_int<32>(temp_out_BW);
+		if (temp_out_BW == 1) {
+			temp_out_packet.data = 0xFF;
+		} else {
+			temp_out_packet.data = 0x00;
+		}
 
 		out_stream.write(temp_out_packet);
 
