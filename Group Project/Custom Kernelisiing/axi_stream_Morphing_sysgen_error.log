@@ -1,0 +1,143 @@
+--------------------------------- Version Log ----------------------------------
+Version                                 Path
+System Generator 2020.1                 C:/Xilinx/Vivado/2020.1
+Matlab 9.8.0.1873465 (R2020a) Update 8  C:\Program Files\MATLAB\R2020a
+Vivado 2020.1                           C:/Xilinx/Vivado/2020.1
+--------------------------------------------------------------------------------
+Summary of Errors:
+Error 0001: Illegal type on port: b
+     Block: 'axi_stream_Morphing/DUT/Algorithm/Morphing/Mult'
+Error 0002: Illegal type on port: b
+     Block: 'axi_stream_Morphing/DUT/Algorithm/Morphing/Mult1'
+Error 0003: Illegal type on port: b
+     Block: 'axi_stream_Morphing/DUT/Algorithm/Morphing/Mult2'
+Error 0004: Illegal type on port: b
+     Block: 'axi_stream_Morphing/DUT/Algorithm/Morphing/Mult3'
+Error 0005: Illegal type on port: b
+     Block: 'axi_stream_Morphing/DUT/Algorithm/Morphing/Mult4'
+Error 0006: Illegal type on port: b
+     Block: 'axi_stream_Morphing/DUT/Algorithm/Morphing/Mult5'
+Error 0007: Illegal type on port: b
+     Block: 'axi_stream_Morphing/DUT/Algorithm/Morphing/Mult6'
+Error 0008: Illegal type on port: b
+     Block: 'axi_stream_Morphing/DUT/Algorithm/Morphing/Mult7'
+Error 0009: Illegal type on port: b
+     Block: 'axi_stream_Morphing/DUT/Algorithm/Morphing/Mult8'
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'axi_stream_Morphing/DUT/Algorithm/Morphing/Mult'
+
+Details:
+The b port has data type Bool.
+The b port must be a signed or unsigned signal.
+
+Error occurred during "Rate and Type Error Checking".
+
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'axi_stream_Morphing/DUT/Algorithm/Morphing/Mult1'
+
+Details:
+The b port has data type Bool.
+The b port must be a signed or unsigned signal.
+
+Error occurred during "Rate and Type Error Checking".
+
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'axi_stream_Morphing/DUT/Algorithm/Morphing/Mult2'
+
+Details:
+The b port has data type Bool.
+The b port must be a signed or unsigned signal.
+
+Error occurred during "Rate and Type Error Checking".
+
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'axi_stream_Morphing/DUT/Algorithm/Morphing/Mult3'
+
+Details:
+The b port has data type Bool.
+The b port must be a signed or unsigned signal.
+
+Error occurred during "Rate and Type Error Checking".
+
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'axi_stream_Morphing/DUT/Algorithm/Morphing/Mult4'
+
+Details:
+The b port has data type Bool.
+The b port must be a signed or unsigned signal.
+
+Error occurred during "Rate and Type Error Checking".
+
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'axi_stream_Morphing/DUT/Algorithm/Morphing/Mult5'
+
+Details:
+The b port has data type Bool.
+The b port must be a signed or unsigned signal.
+
+Error occurred during "Rate and Type Error Checking".
+
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'axi_stream_Morphing/DUT/Algorithm/Morphing/Mult6'
+
+Details:
+The b port has data type Bool.
+The b port must be a signed or unsigned signal.
+
+Error occurred during "Rate and Type Error Checking".
+
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'axi_stream_Morphing/DUT/Algorithm/Morphing/Mult7'
+
+Details:
+The b port has data type Bool.
+The b port must be a signed or unsigned signal.
+
+Error occurred during "Rate and Type Error Checking".
+
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'axi_stream_Morphing/DUT/Algorithm/Morphing/Mult8'
+
+Details:
+The b port has data type Bool.
+The b port must be a signed or unsigned signal.
+
+Error occurred during "Rate and Type Error Checking".
+
+--------------------------------------------------------------------------------
