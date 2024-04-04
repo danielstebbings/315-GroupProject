@@ -1,0 +1,13 @@
+{
+	'objects' => [
+		{
+			'name' => '/axi_stream_Morphing/Clock'
+		},
+		{
+			'name' => '/axi_stream_Morphing/DUT/Algorithm/Out1'
+		},
+		{
+			'name' => '/axi_stream_Morphing/DUT/Algorithm/Out2'
+		},
+	],
+}
