@@ -5,19 +5,27 @@ Matlab 9.8.0.1873465 (R2020a) Update 8  C:\Program Files\MATLAB\R2020a
 Vivado 2020.1                           C:/Xilinx/Vivado/2020.1
 --------------------------------------------------------------------------------
 Summary of Errors:
-Error 0001: Illegal type on port: ip
-     Block: 'axi_stream_Morphing/DUT/Algorithm/Subsystem2/Shift'
+Error 0001: ERROR: An error occurred when creating the Vivado project...
+     Block: Unspecified
 --------------------------------------------------------------------------------
 
 Error 0001:
 
 Reported by:
-  'axi_stream_Morphing/DUT/Algorithm/Subsystem2/Shift'
+  Unspecified
 
 Details:
-The ip port has data type Bool.
-The ip port must be a signed or unsigned signal.
+ERROR: An error occurred when creating the Vivado project.
+error copying
+"{C:/Users/Daniel/Documents/Github/315-GroupProject/Group
+Project/Custom
+Kernelisiing/netlist/sysgen/axi_stream_morphing_clock.xdc}": no
+such file or directory
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 19 18:32:31 2024...
+... 
 
-Error occurred during "Rate and Type Error Checking".
+For more information please refer to
+'C:/Users/Daniel/Documents/Github/315-GroupProject/Group
+Project/Custom Kernelisiing/netlist/vivado.log'
 
 --------------------------------------------------------------------------------
