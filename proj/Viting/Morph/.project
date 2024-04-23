@@ -52,6 +52,11 @@
 			<location>C:/Xil_proj/315/proj/Viting/morph.h</location>
 		</link>
 		<link>
+			<name>testbench/window_tb.cpp</name>
+			<type>1</type>
+			<location>C:/Xil_proj/315/proj/Viting/window_tb.cpp</location>
+		</link>
+		<link>
 			<name>morph_1/constraints/.xml.directive</name>
 			<type>1</type>
 			<location>C:/Xil_proj/315/proj/Viting/Morph/morph_1/morph_1.directive</location>

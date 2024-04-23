@@ -4,3 +4,7 @@ proj/DIY/netlist
 proj/DIY/netlist
 *.log
 proj/Viting/Morph/morph_1/.autopilot
+cppIdea/.vs
+proj/Viting/Morph/morph_1
+proj/Viting/Morph/.apc
+*.dmp
