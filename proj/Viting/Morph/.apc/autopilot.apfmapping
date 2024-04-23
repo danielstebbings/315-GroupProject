@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="main.cpp" path="C:\Xil_proj\315\proj\Viting\main.cpp"/>
+    <originFiles name="morph.h" path="C:\Xil_proj\315\proj\Viting\morph.h"/>
+  </source>
+  <testbench/>
+</autopilotfilemapping:AutoPilotFileMapping>

@@ -1,0 +1,38 @@
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2020.2/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'Daniel' on host 'desktop-jcqtlv3' (Windows NT_amd64 version 6.2) on Mon Apr 22 21:12:55 +0100 2024
+INFO: [HLS 200-10] In directory 'C:/Xil_proj/315/proj/Viting'
+Sourcing Tcl script 'C:/Xil_proj/315/proj/Viting/Morph/morph_1/csynth.tcl'
+INFO: [HLS 200-1510] Running: open_project Morph 
+INFO: [HLS 200-10] Opening project 'C:/Xil_proj/315/proj/Viting/Morph'.
+INFO: [HLS 200-1510] Running: set_top window 
+INFO: [HLS 200-1510] Running: add_files main.cpp 
+INFO: [HLS 200-10] Adding design file 'main.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files morph.h 
+INFO: [HLS 200-10] Adding design file 'morph.h' to the project
+INFO: [HLS 200-1510] Running: open_solution morph_1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution 'C:/Xil_proj/315/proj/Viting/Morph/morph_1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.133 seconds; current allocated memory: 163.792 MB.
+INFO: [HLS 200-10] Analyzing design file 'main.cpp' ... 
+ERROR: [HLS 214-124] use of undeclared identifier 'width': main.cpp:12
+ERROR: [HLS 214-124] use of undeclared identifier 'width': main.cpp:18
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.991 seconds; current allocated memory: 165.077 MB.
+Syntax check failed in clang-tidy
+    while executing
+"source C:/Xil_proj/315/proj/Viting/Morph/morph_1/csynth.tcl"
+    invoked from within
+"hls::main C:/Xil_proj/315/proj/Viting/Morph/morph_1/csynth.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 hls::main {*}$newargs"
+    (procedure "hls_proc" line 16)
+    invoked from within
+"hls_proc [info nameofexecutable] $argv"
+INFO: [HLS 200-112] Total CPU user time: 4 seconds. Total CPU system time: 2 seconds. Total elapsed time: 6.879 seconds; peak allocated memory: 164.740 MB.

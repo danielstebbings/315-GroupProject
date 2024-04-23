@@ -1,0 +1,197 @@
+
+
+================================================================
+== Vitis HLS Report for 'MedianFilter'
+================================================================
+* Date:           Mon Apr 22 20:25:55 2024
+
+* Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
+* Project:        hls_project
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.149 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |        3|        3|  30.000 ns|  30.000 ns|    1|    1|      yes|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|    451|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       -|      -|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|      -|    -|
+|Register         |        -|    -|     182|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|     182|    451|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-------------------------+----------+----+---+----+------------+------------+
+    |      Variable Name      | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-------------------------+----------+----+---+----+------------+------------+
+    |icmp_ln10_1_fu_149_p2    |      icmp|   0|  0|  11|           8|           8|
+    |icmp_ln10_2_fu_171_p2    |      icmp|   0|  0|  11|           8|           8|
+    |icmp_ln10_fu_127_p2      |      icmp|   0|  0|  11|           8|           8|
+    |icmp_ln11_1_fu_215_p2    |      icmp|   0|  0|  11|           8|           8|
+    |icmp_ln11_2_fu_237_p2    |      icmp|   0|  0|  11|           8|           8|
+    |icmp_ln11_fu_193_p2      |      icmp|   0|  0|  11|           8|           8|
+    |icmp_ln12_1_fu_259_p2    |      icmp|   0|  0|  11|           8|           8|
+    |icmp_ln12_2_fu_265_p2    |      icmp|   0|  0|  11|           8|           8|
+    |icmp_ln12_fu_271_p2      |      icmp|   0|  0|  11|           8|           8|
+    |icmp_ln13_1_fu_317_p2    |      icmp|   0|  0|  11|           8|           8|
+    |icmp_ln13_2_fu_331_p2    |      icmp|   0|  0|  11|           8|           8|
+    |icmp_ln13_fu_307_p2      |      icmp|   0|  0|  11|           8|           8|
+    |icmp_ln14_1_fu_365_p2    |      icmp|   0|  0|  11|           8|           8|
+    |icmp_ln14_2_fu_379_p2    |      icmp|   0|  0|  11|           8|           8|
+    |icmp_ln14_fu_353_p2      |      icmp|   0|  0|  11|           8|           8|
+    |icmp_ln15_1_fu_403_p2    |      icmp|   0|  0|  11|           8|           8|
+    |icmp_ln15_2_fu_422_p2    |      icmp|   0|  0|  11|           8|           8|
+    |icmp_ln15_fu_393_p2      |      icmp|   0|  0|  11|           8|           8|
+    |icmp_ln16_fu_432_p2      |      icmp|   0|  0|  11|           8|           8|
+    |V                        |    select|   0|  0|   8|           1|           8|
+    |select_ln10_1_fu_141_p3  |    select|   0|  0|   8|           1|           8|
+    |select_ln10_2_fu_155_p3  |    select|   0|  0|   8|           1|           8|
+    |select_ln10_3_fu_163_p3  |    select|   0|  0|   8|           1|           8|
+    |select_ln10_4_fu_177_p3  |    select|   0|  0|   8|           1|           8|
+    |select_ln10_5_fu_185_p3  |    select|   0|  0|   8|           1|           8|
+    |select_ln10_fu_133_p3    |    select|   0|  0|   8|           1|           8|
+    |select_ln11_3_fu_243_p3  |    select|   0|  0|   8|           1|           8|
+    |select_ln11_fu_221_p3    |    select|   0|  0|   8|           1|           8|
+    |select_ln12_2_fu_302_p3  |    select|   0|  0|   8|           1|           8|
+    |select_ln12_fu_297_p3    |    select|   0|  0|   8|           1|           8|
+    |select_ln13_1_fu_337_p3  |    select|   0|  0|   8|           1|           8|
+    |select_ln13_2_fu_345_p3  |    select|   0|  0|   8|           1|           8|
+    |select_ln13_fu_323_p3    |    select|   0|  0|   8|           1|           8|
+    |select_ln14_fu_385_p3    |    select|   0|  0|   8|           1|           8|
+    |select_ln15_1_fu_415_p3  |    select|   0|  0|   8|           1|           8|
+    |select_ln15_fu_408_p3    |    select|   0|  0|   8|           1|           8|
+    |temp_10_fu_358_p3        |    select|   0|  0|   8|           1|           8|
+    |temp_11_fu_371_p3        |    select|   0|  0|   8|           1|           8|
+    |temp_12_fu_397_p3        |    select|   0|  0|   8|           1|           8|
+    |temp_13_fu_426_p3        |    select|   0|  0|   8|           1|           8|
+    |temp_1_fu_199_p3         |    select|   0|  0|   8|           1|           8|
+    |temp_2_fu_207_p3         |    select|   0|  0|   8|           1|           8|
+    |temp_3_fu_229_p3         |    select|   0|  0|   8|           1|           8|
+    |temp_4_fu_251_p3         |    select|   0|  0|   8|           1|           8|
+    |temp_5_fu_275_p3         |    select|   0|  0|   8|           1|           8|
+    |temp_6_fu_281_p3         |    select|   0|  0|   8|           1|           8|
+    |temp_7_fu_287_p3         |    select|   0|  0|   8|           1|           8|
+    |temp_8_fu_292_p3         |    select|   0|  0|   8|           1|           8|
+    |temp_9_fu_311_p3         |    select|   0|  0|   8|           1|           8|
+    |ap_enable_pp0            |       xor|   0|  0|   2|           1|           2|
+    +-------------------------+----------+----+---+----+------------+------------+
+    |Total                    |          |   0|  0| 451|         183|         394|
+    +-------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    +-------------------------------+---+----+-----+-----------+
+    |              Name             | FF| LUT| Bits| Const Bits|
+    +-------------------------------+---+----+-----+-----------+
+    |ap_CS_fsm                      |  1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1        |  1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2        |  1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter3        |  1|   0|    1|          0|
+    |icmp_ln12_1_reg_501            |  1|   0|    1|          0|
+    |icmp_ln12_2_reg_507            |  1|   0|    1|          0|
+    |pixelWindowBuffer_0            |  8|   0|    8|          0|
+    |pixelWindowBuffer_1            |  8|   0|    8|          0|
+    |pixelWindowBuffer_3            |  8|   0|    8|          0|
+    |pixelWindowBuffer_4            |  8|   0|    8|          0|
+    |pixelWindowBuffer_6            |  8|   0|    8|          0|
+    |pixelWindowBuffer_7            |  8|   0|    8|          0|
+    |select_ln10_2_reg_452          |  8|   0|    8|          0|
+    |select_ln10_4_reg_458          |  8|   0|    8|          0|
+    |select_ln10_reg_445            |  8|   0|    8|          0|
+    |select_ln11_3_reg_489          |  8|   0|    8|          0|
+    |select_ln11_reg_477            |  8|   0|    8|          0|
+    |select_ln13_1_reg_513          |  8|   0|    8|          0|
+    |select_ln14_reg_531            |  8|   0|    8|          0|
+    |select_ln15_1_reg_544          |  8|   0|    8|          0|
+    |select_ln15_reg_538            |  8|   0|    8|          0|
+    |temp_10_reg_519                |  8|   0|    8|          0|
+    |temp_10_reg_519_pp0_iter2_reg  |  8|   0|    8|          0|
+    |temp_11_reg_525                |  8|   0|    8|          0|
+    |temp_1_reg_464                 |  8|   0|    8|          0|
+    |temp_2_reg_470                 |  8|   0|    8|          0|
+    |temp_3_reg_483                 |  8|   0|    8|          0|
+    |temp_4_reg_495                 |  8|   0|    8|          0|
+    +-------------------------------+---+----+-----+-----------+
+    |Total                          |182|   0|  182|          0|
+    +-------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++----------+-----+-----+------------+--------------+--------------+
+| RTL Ports| Dir | Bits|  Protocol  | Source Object|    C Type    |
++----------+-----+-----+------------+--------------+--------------+
+|ap_clk    |   in|    1|  ap_ctrl_hs|  MedianFilter|  return value|
+|ap_rst    |   in|    1|  ap_ctrl_hs|  MedianFilter|  return value|
+|ap_start  |   in|    1|  ap_ctrl_hs|  MedianFilter|  return value|
+|ap_done   |  out|    1|  ap_ctrl_hs|  MedianFilter|  return value|
+|ap_idle   |  out|    1|  ap_ctrl_hs|  MedianFilter|  return value|
+|ap_ready  |  out|    1|  ap_ctrl_hs|  MedianFilter|  return value|
+|row1      |   in|    8|     ap_none|          row1|        scalar|
+|row2      |   in|    8|     ap_none|          row2|        scalar|
+|row3      |   in|    8|     ap_none|          row3|        scalar|
+|V         |  out|    8|      ap_vld|             V|       pointer|
+|V_ap_vld  |  out|    1|      ap_vld|             V|       pointer|
++----------+-----+-----+------------+--------------+--------------+
+

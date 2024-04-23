@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Apr 21 23:17:49 2024
+# Process ID: 5180
+# Current directory: C:/Xil_proj/315/proj/DIY/imp
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12956 C:\Xil_proj\315\proj\DIY\imp\imp.xpr
+# Log file: C:/Xil_proj/315/proj/DIY/imp/vivado.log
+# Journal file: C:/Xil_proj/315/proj/DIY/imp\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Xil_proj/315/proj/DIY/imp/imp.xpr
+update_compile_order -fileset sources_1

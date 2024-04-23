@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="MedianFilter.cpp" path="C:\Xil_proj\315\proj\Windowing\ug948-design-files\SysGen_Tutorial\Lab2\C_code\MedianFilter.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="TestMedianFilter.cpp" path="C:\Xil_proj\315\proj\Windowing\ug948-design-files\SysGen_Tutorial\Lab2\C_code\TestMedianFilter.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

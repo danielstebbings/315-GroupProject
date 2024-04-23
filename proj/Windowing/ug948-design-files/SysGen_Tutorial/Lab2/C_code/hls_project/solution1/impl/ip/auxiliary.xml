@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="MedianFilter" xd:componentRef="MedianFilter" xd:initiationInterval="1" xd:clockPeriod="10.000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="ap_ctrl" xd:busTypeRef="acc_handshake" xd:type="acc_handshake"/>
+  <xd:arg xd:name="row1" xd:originalName="row1" xd:direction="in" xd:interfaceRef="row1" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="row2" xd:originalName="row2" xd:direction="in" xd:interfaceRef="row2" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="row3" xd:originalName="row3" xd:direction="in" xd:interfaceRef="row3" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="*(V)" xd:originalName="V" xd:direction="out" xd:interfaceRef="V" xd:busTypeRef="register" xd:handshakeRef="ap_vld" xd:dataWidth="1" xd:firstOut="3"/>
+  <xd:latencyEstimates xd:best-case="3" xd:worst-case="3" xd:average-case="3"/>
+  <xd:resourceEstimates xd:LUT="451" xd:FF="182" xd:BRAM="0" xd:DSP="0"/>
+</xd:acceleratorMap>
