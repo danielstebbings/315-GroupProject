@@ -10,7 +10,7 @@ add_files morph.h
 open_solution "morph_1" -flow_target vivado
 set_part {xc7z020clg400-1}
 create_clock -period 10 -name default
-#source "./Morph/morph_1/directives.tcl"
+source "./Morph/morph_1/directives.tcl"
 #csim_design
 csynth_design
 #cosim_design
