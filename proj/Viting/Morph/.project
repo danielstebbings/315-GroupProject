@@ -37,6 +37,11 @@
 			<location>C:/Xil_proj/315/proj/Viting/Morph/.apc/.tb</location>
 		</link>
 		<link>
+			<name>.reference/ap_int.h</name>
+			<type>1</type>
+			<location>C:/Xilinx/Vitis_HLS/2020.2/include/ap_int.h</location>
+		</link>
+		<link>
 			<name>morph_1/constraints</name>
 			<type>2</type>
 			<location>C:/Xil_proj/315/proj/Viting/Morph/morph_1/.tcls</location>
