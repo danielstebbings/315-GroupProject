@@ -18,5 +18,5 @@
   <xd:arg xd:name="*(conv_coeffs)" xd:originalName="conv_coeffs" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x10" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
   <xd:arg xd:name="*(conv_threshold)" xd:originalName="conv_threshold" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x18" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
   <xd:latencyEstimates xd:best-case="undef" xd:worst-case="undef" xd:average-case="undef"/>
-  <xd:resourceEstimates xd:LUT="4324" xd:FF="2898" xd:BRAM="0" xd:DSP="28"/>
+  <xd:resourceEstimates xd:LUT="4482" xd:FF="3046" xd:BRAM="0" xd:DSP="28"/>
 </xd:acceleratorMap>

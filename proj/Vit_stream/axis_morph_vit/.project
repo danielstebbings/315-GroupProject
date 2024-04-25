@@ -37,16 +37,6 @@
 			<location>C:/Xil_proj/315/proj/Vit_stream/axis_morph_vit/.apc/.tb</location>
 		</link>
 		<link>
-			<name>.reference/ap_int_base.h</name>
-			<type>1</type>
-			<location>C:/Xilinx/Vitis_HLS/2020.2/include/ap_int_base.h</location>
-		</link>
-		<link>
-			<name>.reference/hls_stream_thread_unsafe.h</name>
-			<type>1</type>
-			<location>C:/Xilinx/Vitis_HLS/2020.2/include/hls_stream_thread_unsafe.h</location>
-		</link>
-		<link>
 			<name>ms/constraints</name>
 			<type>2</type>
 			<location>C:/Xil_proj/315/proj/Vit_stream/axis_morph_vit/ms/.tcls</location>

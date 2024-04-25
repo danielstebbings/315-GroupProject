@@ -65,12 +65,12 @@
     wire token_clear;
     reg [2:0] origin;
 
-reg [15:0] trans_in_cnt_0;// for process Loop_VITIS_LOOP_40_1_proc3_U0
+reg [15:0] trans_in_cnt_0;// for process Loop_VITIS_LOOP_42_1_proc3_U0
 always @(negedge reset or posedge clock) begin
     if (~reset) begin
          trans_in_cnt_0 <= 16'h0;
     end
-    else if (Loop_VITIS_LOOP_40_1_proc3_U0.start_write == 1'b1) begin
+    else if (Loop_VITIS_LOOP_42_1_proc3_U0.start_write == 1'b1) begin
         trans_in_cnt_0 <= trans_in_cnt_0 + 16'h1;
     end
     else begin
@@ -78,12 +78,12 @@ always @(negedge reset or posedge clock) begin
     end
 end
 
-reg [15:0] trans_out_cnt_0;// for process Loop_VITIS_LOOP_40_1_proc3_U0
+reg [15:0] trans_out_cnt_0;// for process Loop_VITIS_LOOP_42_1_proc3_U0
 always @(negedge reset or posedge clock) begin
     if (~reset) begin
          trans_out_cnt_0 <= 16'h0;
     end
-    else if (Loop_VITIS_LOOP_40_1_proc3_U0.ap_done == 1'b1 && Loop_VITIS_LOOP_40_1_proc3_U0.ap_continue == 1'b1) begin
+    else if (Loop_VITIS_LOOP_42_1_proc3_U0.ap_done == 1'b1 && Loop_VITIS_LOOP_42_1_proc3_U0.ap_continue == 1'b1) begin
         trans_out_cnt_0 <= trans_out_cnt_0 + 16'h1;
     end
     else begin
@@ -117,7 +117,7 @@ always @(negedge reset or posedge clock) begin
     end
 end
 
-    // Process: Loop_VITIS_LOOP_40_1_proc3_U0
+    // Process: Loop_VITIS_LOOP_42_1_proc3_U0
     ms_hls_deadlock_detect_unit #(3, 0, 1, 1) ms_hls_deadlock_detect_unit_0 (
         .reset(reset),
         .clock(clock),
@@ -133,9 +133,9 @@ end
         .token_out_vec(token_out_vec_0),
         .dl_detect_out(dl_in_vec[0]));
 
-    assign proc_0_data_FIFO_blk[0] = 1'b0 | (~Loop_VITIS_LOOP_40_1_proc3_U0.in_raw_stream_blk_n);
+    assign proc_0_data_FIFO_blk[0] = 1'b0 | (~Loop_VITIS_LOOP_42_1_proc3_U0.in_raw_stream_blk_n);
     assign proc_0_data_PIPO_blk[0] = 1'b0;
-    assign proc_0_start_FIFO_blk[0] = 1'b0 | (~start_for_RGB_to_binary_stream_U0_U.if_full_n & Loop_VITIS_LOOP_40_1_proc3_U0.ap_start & ~Loop_VITIS_LOOP_40_1_proc3_U0.real_start & (trans_in_cnt_0 == trans_out_cnt_0) & ~start_for_RGB_to_binary_stream_U0_U.if_read);
+    assign proc_0_start_FIFO_blk[0] = 1'b0 | (~start_for_RGB_to_binary_stream_U0_U.if_full_n & Loop_VITIS_LOOP_42_1_proc3_U0.ap_start & ~Loop_VITIS_LOOP_42_1_proc3_U0.real_start & (trans_in_cnt_0 == trans_out_cnt_0) & ~start_for_RGB_to_binary_stream_U0_U.if_read);
     assign proc_0_TLF_FIFO_blk[0] = 1'b0;
     assign proc_0_input_sync_blk[0] = 1'b0;
     assign proc_0_output_sync_blk[0] = 1'b0;
@@ -180,7 +180,7 @@ end
     assign proc_dep_vld_vec_1[0] = dl_detect_out ? proc_dep_vld_vec_1_reg[0] : (proc_1_data_FIFO_blk[0] | proc_1_data_PIPO_blk[0] | proc_1_start_FIFO_blk[0] | proc_1_TLF_FIFO_blk[0] | proc_1_input_sync_blk[0] | proc_1_output_sync_blk[0]);
     assign proc_1_data_FIFO_blk[1] = 1'b0 | (~RGB_to_binary_stream_U0.out_bw_blk_n);
     assign proc_1_data_PIPO_blk[1] = 1'b0;
-    assign proc_1_start_FIFO_blk[1] = 1'b0 | (~start_for_Loop_VITIS_LOOP_56_2_proc4_U0_U.if_full_n & RGB_to_binary_stream_U0.ap_start & ~RGB_to_binary_stream_U0.real_start & (trans_in_cnt_1 == trans_out_cnt_1) & ~start_for_Loop_VITIS_LOOP_56_2_proc4_U0_U.if_read);
+    assign proc_1_start_FIFO_blk[1] = 1'b0 | (~start_for_Loop_VITIS_LOOP_58_2_proc4_U0_U.if_full_n & RGB_to_binary_stream_U0.ap_start & ~RGB_to_binary_stream_U0.real_start & (trans_in_cnt_1 == trans_out_cnt_1) & ~start_for_Loop_VITIS_LOOP_58_2_proc4_U0_U.if_read);
     assign proc_1_TLF_FIFO_blk[1] = 1'b0;
     assign proc_1_input_sync_blk[1] = 1'b0;
     assign proc_1_output_sync_blk[1] = 1'b0;
@@ -206,7 +206,7 @@ end
     assign dep_chan_data_1_2 = out_chan_dep_data_1;
     assign token_1_2 = token_out_vec_1[1];
 
-    // Process: Loop_VITIS_LOOP_56_2_proc4_U0
+    // Process: Loop_VITIS_LOOP_58_2_proc4_U0
     ms_hls_deadlock_detect_unit #(3, 2, 1, 1) ms_hls_deadlock_detect_unit_2 (
         .reset(reset),
         .clock(clock),
@@ -222,9 +222,9 @@ end
         .token_out_vec(token_out_vec_2),
         .dl_detect_out(dl_in_vec[2]));
 
-    assign proc_2_data_FIFO_blk[0] = 1'b0 | (~Loop_VITIS_LOOP_56_2_proc4_U0.in_BW_stream_var_blk_n);
+    assign proc_2_data_FIFO_blk[0] = 1'b0 | (~Loop_VITIS_LOOP_58_2_proc4_U0.in_BW_stream_var_blk_n);
     assign proc_2_data_PIPO_blk[0] = 1'b0;
-    assign proc_2_start_FIFO_blk[0] = 1'b0 | (~start_for_Loop_VITIS_LOOP_56_2_proc4_U0_U.if_empty_n & Loop_VITIS_LOOP_56_2_proc4_U0.ap_idle & ~start_for_Loop_VITIS_LOOP_56_2_proc4_U0_U.if_write);
+    assign proc_2_start_FIFO_blk[0] = 1'b0 | (~start_for_Loop_VITIS_LOOP_58_2_proc4_U0_U.if_empty_n & Loop_VITIS_LOOP_58_2_proc4_U0.ap_idle & ~start_for_Loop_VITIS_LOOP_58_2_proc4_U0_U.if_write);
     assign proc_2_TLF_FIFO_blk[0] = 1'b0;
     assign proc_2_input_sync_blk[0] = 1'b0;
     assign proc_2_output_sync_blk[0] = 1'b0;

@@ -14,15 +14,15 @@ add_files conv2d.h
 add_files morph_stream.cpp
 add_files morph_stream.h
 add_files morph_stream_utils.h
-add_files -tb tb.cpp
-add_files -tb tb.h
-add_files -tb axis_morph_tb
+add_files -tb tb.cpp -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"
+add_files -tb tb.h -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"
+add_files -tb axis_morph_tb -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"
 open_solution "ms" -flow_target vivado
-set_part {xc7z020clg400-1}
+set_part {xc7z020-clg400-1}
 create_clock -period 10 -name default
 config_export -format ip_catalog -output C:/Xil_proj/315/proj/IP/ms/ms.zip -rtl verilog
-#source "./axis_morph_vit/ms/directives.tcl"
-csim_design
+source "./axis_morph_vit/ms/directives.tcl"
+csim_design -clean
 csynth_design
 cosim_design
-export_design -rtl verilog -format ip_catalog -output C:/Xil_proj/315/proj/IP/ms/ms.zip
+export_design -rtl verilog -format sysgen -output C:/Xil_proj/315/proj/IP/ms/msV1.1

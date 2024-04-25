@@ -58,7 +58,7 @@ end;
 architecture behav of ms is 
     attribute CORE_GENERATION_INFO : STRING;
     attribute CORE_GENERATION_INFO of behav : architecture is
-    "ms_ms,hls_ip_2020_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020-clg400-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=dataflow,HLS_SYN_CLOCK=7.297000,HLS_SYN_LAT=-1,HLS_SYN_TPT=-1,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=2898,HLS_SYN_LUT=4324,HLS_VERSION=2020_2}";
+    "ms_ms,hls_ip_2020_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020-clg400-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=dataflow,HLS_SYN_CLOCK=7.297000,HLS_SYN_LAT=-1,HLS_SYN_TPT=-1,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=3046,HLS_SYN_LUT=4482,HLS_VERSION=2020_2}";
     constant C_S_AXI_DATA_WIDTH : INTEGER range 63 downto 0 := 20;
     constant C_S_AXI_WSTRB_WIDTH : INTEGER range 63 downto 0 := 4;
     constant C_S_AXI_ADDR_WIDTH : INTEGER range 63 downto 0 := 20;
@@ -78,40 +78,40 @@ architecture behav of ms is
     signal ap_ready : STD_LOGIC;
     signal ap_done : STD_LOGIC;
     signal ap_idle : STD_LOGIC;
-    signal Loop_VITIS_LOOP_40_1_proc3_U0_ap_start : STD_LOGIC;
-    signal Loop_VITIS_LOOP_40_1_proc3_U0_ap_done : STD_LOGIC;
-    signal Loop_VITIS_LOOP_40_1_proc3_U0_ap_continue : STD_LOGIC;
-    signal Loop_VITIS_LOOP_40_1_proc3_U0_ap_idle : STD_LOGIC;
-    signal Loop_VITIS_LOOP_40_1_proc3_U0_ap_ready : STD_LOGIC;
-    signal Loop_VITIS_LOOP_40_1_proc3_U0_start_out : STD_LOGIC;
-    signal Loop_VITIS_LOOP_40_1_proc3_U0_start_write : STD_LOGIC;
-    signal Loop_VITIS_LOOP_40_1_proc3_U0_in_stream_TREADY : STD_LOGIC;
-    signal Loop_VITIS_LOOP_40_1_proc3_U0_in_raw_stream_din : STD_LOGIC_VECTOR (31 downto 0);
-    signal Loop_VITIS_LOOP_40_1_proc3_U0_in_raw_stream_write : STD_LOGIC;
+    signal Loop_VITIS_LOOP_42_1_proc3_U0_ap_start : STD_LOGIC;
+    signal Loop_VITIS_LOOP_42_1_proc3_U0_ap_done : STD_LOGIC;
+    signal Loop_VITIS_LOOP_42_1_proc3_U0_ap_continue : STD_LOGIC;
+    signal Loop_VITIS_LOOP_42_1_proc3_U0_ap_idle : STD_LOGIC;
+    signal Loop_VITIS_LOOP_42_1_proc3_U0_ap_ready : STD_LOGIC;
+    signal Loop_VITIS_LOOP_42_1_proc3_U0_start_out : STD_LOGIC;
+    signal Loop_VITIS_LOOP_42_1_proc3_U0_start_write : STD_LOGIC;
+    signal Loop_VITIS_LOOP_42_1_proc3_U0_in_stream_TREADY : STD_LOGIC;
+    signal Loop_VITIS_LOOP_42_1_proc3_U0_in_raw_stream_din : STD_LOGIC_VECTOR (31 downto 0);
+    signal Loop_VITIS_LOOP_42_1_proc3_U0_in_raw_stream_write : STD_LOGIC;
     signal RGB_to_binary_stream_U0_ap_start : STD_LOGIC;
     signal RGB_to_binary_stream_U0_ap_done : STD_LOGIC;
     signal RGB_to_binary_stream_U0_ap_continue : STD_LOGIC;
     signal RGB_to_binary_stream_U0_ap_idle : STD_LOGIC;
     signal RGB_to_binary_stream_U0_ap_ready : STD_LOGIC;
+    signal RGB_to_binary_stream_U0_start_out : STD_LOGIC;
+    signal RGB_to_binary_stream_U0_start_write : STD_LOGIC;
     signal RGB_to_binary_stream_U0_in_32b_read : STD_LOGIC;
     signal RGB_to_binary_stream_U0_out_bw_din : STD_LOGIC_VECTOR (15 downto 0);
     signal RGB_to_binary_stream_U0_out_bw_write : STD_LOGIC;
-    signal RGB_to_binary_stream_U0_start_out : STD_LOGIC;
-    signal RGB_to_binary_stream_U0_start_write : STD_LOGIC;
-    signal Loop_VITIS_LOOP_56_2_proc4_U0_ap_start : STD_LOGIC;
-    signal Loop_VITIS_LOOP_56_2_proc4_U0_ap_done : STD_LOGIC;
-    signal Loop_VITIS_LOOP_56_2_proc4_U0_ap_continue : STD_LOGIC;
-    signal Loop_VITIS_LOOP_56_2_proc4_U0_ap_idle : STD_LOGIC;
-    signal Loop_VITIS_LOOP_56_2_proc4_U0_ap_ready : STD_LOGIC;
-    signal Loop_VITIS_LOOP_56_2_proc4_U0_in_BW_stream_var_read : STD_LOGIC;
-    signal Loop_VITIS_LOOP_56_2_proc4_U0_out_stream_TDATA : STD_LOGIC_VECTOR (31 downto 0);
-    signal Loop_VITIS_LOOP_56_2_proc4_U0_out_stream_TVALID : STD_LOGIC;
-    signal Loop_VITIS_LOOP_56_2_proc4_U0_out_stream_TKEEP : STD_LOGIC_VECTOR (3 downto 0);
-    signal Loop_VITIS_LOOP_56_2_proc4_U0_out_stream_TSTRB : STD_LOGIC_VECTOR (3 downto 0);
-    signal Loop_VITIS_LOOP_56_2_proc4_U0_out_stream_TUSER : STD_LOGIC_VECTOR (1 downto 0);
-    signal Loop_VITIS_LOOP_56_2_proc4_U0_out_stream_TLAST : STD_LOGIC_VECTOR (0 downto 0);
-    signal Loop_VITIS_LOOP_56_2_proc4_U0_out_stream_TID : STD_LOGIC_VECTOR (4 downto 0);
-    signal Loop_VITIS_LOOP_56_2_proc4_U0_out_stream_TDEST : STD_LOGIC_VECTOR (5 downto 0);
+    signal Loop_VITIS_LOOP_58_2_proc4_U0_ap_start : STD_LOGIC;
+    signal Loop_VITIS_LOOP_58_2_proc4_U0_ap_done : STD_LOGIC;
+    signal Loop_VITIS_LOOP_58_2_proc4_U0_ap_continue : STD_LOGIC;
+    signal Loop_VITIS_LOOP_58_2_proc4_U0_ap_idle : STD_LOGIC;
+    signal Loop_VITIS_LOOP_58_2_proc4_U0_ap_ready : STD_LOGIC;
+    signal Loop_VITIS_LOOP_58_2_proc4_U0_in_BW_stream_var_read : STD_LOGIC;
+    signal Loop_VITIS_LOOP_58_2_proc4_U0_out_stream_TDATA : STD_LOGIC_VECTOR (31 downto 0);
+    signal Loop_VITIS_LOOP_58_2_proc4_U0_out_stream_TVALID : STD_LOGIC;
+    signal Loop_VITIS_LOOP_58_2_proc4_U0_out_stream_TKEEP : STD_LOGIC_VECTOR (3 downto 0);
+    signal Loop_VITIS_LOOP_58_2_proc4_U0_out_stream_TSTRB : STD_LOGIC_VECTOR (3 downto 0);
+    signal Loop_VITIS_LOOP_58_2_proc4_U0_out_stream_TUSER : STD_LOGIC_VECTOR (1 downto 0);
+    signal Loop_VITIS_LOOP_58_2_proc4_U0_out_stream_TLAST : STD_LOGIC_VECTOR (0 downto 0);
+    signal Loop_VITIS_LOOP_58_2_proc4_U0_out_stream_TID : STD_LOGIC_VECTOR (4 downto 0);
+    signal Loop_VITIS_LOOP_58_2_proc4_U0_out_stream_TDEST : STD_LOGIC_VECTOR (5 downto 0);
     signal ap_sync_continue : STD_LOGIC;
     signal in_raw_stream_full_n : STD_LOGIC;
     signal in_raw_stream_dout : STD_LOGIC_VECTOR (31 downto 0);
@@ -125,14 +125,14 @@ architecture behav of ms is
     signal start_for_RGB_to_binary_stream_U0_full_n : STD_LOGIC;
     signal start_for_RGB_to_binary_stream_U0_dout : STD_LOGIC_VECTOR (0 downto 0);
     signal start_for_RGB_to_binary_stream_U0_empty_n : STD_LOGIC;
-    signal start_for_Loop_VITIS_LOOP_56_2_proc4_U0_din : STD_LOGIC_VECTOR (0 downto 0);
-    signal start_for_Loop_VITIS_LOOP_56_2_proc4_U0_full_n : STD_LOGIC;
-    signal start_for_Loop_VITIS_LOOP_56_2_proc4_U0_dout : STD_LOGIC_VECTOR (0 downto 0);
-    signal start_for_Loop_VITIS_LOOP_56_2_proc4_U0_empty_n : STD_LOGIC;
-    signal Loop_VITIS_LOOP_56_2_proc4_U0_start_full_n : STD_LOGIC;
-    signal Loop_VITIS_LOOP_56_2_proc4_U0_start_write : STD_LOGIC;
+    signal start_for_Loop_VITIS_LOOP_58_2_proc4_U0_din : STD_LOGIC_VECTOR (0 downto 0);
+    signal start_for_Loop_VITIS_LOOP_58_2_proc4_U0_full_n : STD_LOGIC;
+    signal start_for_Loop_VITIS_LOOP_58_2_proc4_U0_dout : STD_LOGIC_VECTOR (0 downto 0);
+    signal start_for_Loop_VITIS_LOOP_58_2_proc4_U0_empty_n : STD_LOGIC;
+    signal Loop_VITIS_LOOP_58_2_proc4_U0_start_full_n : STD_LOGIC;
+    signal Loop_VITIS_LOOP_58_2_proc4_U0_start_write : STD_LOGIC;
 
-    component ms_Loop_VITIS_LOOP_40_1_proc3 IS
+    component ms_Loop_VITIS_LOOP_42_1_proc3 IS
     port (
         ap_clk : IN STD_LOGIC;
         ap_rst : IN STD_LOGIC;
@@ -169,18 +169,18 @@ architecture behav of ms is
         ap_continue : IN STD_LOGIC;
         ap_idle : OUT STD_LOGIC;
         ap_ready : OUT STD_LOGIC;
+        start_out : OUT STD_LOGIC;
+        start_write : OUT STD_LOGIC;
         in_32b_dout : IN STD_LOGIC_VECTOR (31 downto 0);
         in_32b_empty_n : IN STD_LOGIC;
         in_32b_read : OUT STD_LOGIC;
         out_bw_din : OUT STD_LOGIC_VECTOR (15 downto 0);
         out_bw_full_n : IN STD_LOGIC;
-        out_bw_write : OUT STD_LOGIC;
-        start_out : OUT STD_LOGIC;
-        start_write : OUT STD_LOGIC );
+        out_bw_write : OUT STD_LOGIC );
     end component;
 
 
-    component ms_Loop_VITIS_LOOP_56_2_proc4 IS
+    component ms_Loop_VITIS_LOOP_58_2_proc4 IS
     port (
         ap_clk : IN STD_LOGIC;
         ap_rst : IN STD_LOGIC;
@@ -249,7 +249,7 @@ architecture behav of ms is
     end component;
 
 
-    component ms_start_for_Loop_VITIS_LOOP_56_2_proc4_U0 IS
+    component ms_start_for_Loop_VITIS_LOOP_58_2_proc4_U0 IS
     port (
         clk : IN STD_LOGIC;
         reset : IN STD_LOGIC;
@@ -334,71 +334,71 @@ begin
         ap_done => ap_done,
         ap_idle => ap_idle);
 
-    Loop_VITIS_LOOP_40_1_proc3_U0 : component ms_Loop_VITIS_LOOP_40_1_proc3
+    Loop_VITIS_LOOP_42_1_proc3_U0 : component ms_Loop_VITIS_LOOP_42_1_proc3
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst_n_inv,
-        ap_start => Loop_VITIS_LOOP_40_1_proc3_U0_ap_start,
+        ap_start => Loop_VITIS_LOOP_42_1_proc3_U0_ap_start,
         start_full_n => start_for_RGB_to_binary_stream_U0_full_n,
-        ap_done => Loop_VITIS_LOOP_40_1_proc3_U0_ap_done,
-        ap_continue => Loop_VITIS_LOOP_40_1_proc3_U0_ap_continue,
-        ap_idle => Loop_VITIS_LOOP_40_1_proc3_U0_ap_idle,
-        ap_ready => Loop_VITIS_LOOP_40_1_proc3_U0_ap_ready,
-        start_out => Loop_VITIS_LOOP_40_1_proc3_U0_start_out,
-        start_write => Loop_VITIS_LOOP_40_1_proc3_U0_start_write,
+        ap_done => Loop_VITIS_LOOP_42_1_proc3_U0_ap_done,
+        ap_continue => Loop_VITIS_LOOP_42_1_proc3_U0_ap_continue,
+        ap_idle => Loop_VITIS_LOOP_42_1_proc3_U0_ap_idle,
+        ap_ready => Loop_VITIS_LOOP_42_1_proc3_U0_ap_ready,
+        start_out => Loop_VITIS_LOOP_42_1_proc3_U0_start_out,
+        start_write => Loop_VITIS_LOOP_42_1_proc3_U0_start_write,
         in_stream_TDATA => in_stream_TDATA,
         in_stream_TVALID => in_stream_TVALID,
-        in_stream_TREADY => Loop_VITIS_LOOP_40_1_proc3_U0_in_stream_TREADY,
+        in_stream_TREADY => Loop_VITIS_LOOP_42_1_proc3_U0_in_stream_TREADY,
         in_stream_TKEEP => in_stream_TKEEP,
         in_stream_TSTRB => in_stream_TSTRB,
         in_stream_TUSER => in_stream_TUSER,
         in_stream_TLAST => in_stream_TLAST,
         in_stream_TID => in_stream_TID,
         in_stream_TDEST => in_stream_TDEST,
-        in_raw_stream_din => Loop_VITIS_LOOP_40_1_proc3_U0_in_raw_stream_din,
+        in_raw_stream_din => Loop_VITIS_LOOP_42_1_proc3_U0_in_raw_stream_din,
         in_raw_stream_full_n => in_raw_stream_full_n,
-        in_raw_stream_write => Loop_VITIS_LOOP_40_1_proc3_U0_in_raw_stream_write);
+        in_raw_stream_write => Loop_VITIS_LOOP_42_1_proc3_U0_in_raw_stream_write);
 
     RGB_to_binary_stream_U0 : component ms_RGB_to_binary_stream
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst_n_inv,
         ap_start => RGB_to_binary_stream_U0_ap_start,
-        start_full_n => start_for_Loop_VITIS_LOOP_56_2_proc4_U0_full_n,
+        start_full_n => start_for_Loop_VITIS_LOOP_58_2_proc4_U0_full_n,
         ap_done => RGB_to_binary_stream_U0_ap_done,
         ap_continue => RGB_to_binary_stream_U0_ap_continue,
         ap_idle => RGB_to_binary_stream_U0_ap_idle,
         ap_ready => RGB_to_binary_stream_U0_ap_ready,
+        start_out => RGB_to_binary_stream_U0_start_out,
+        start_write => RGB_to_binary_stream_U0_start_write,
         in_32b_dout => in_raw_stream_dout,
         in_32b_empty_n => in_raw_stream_empty_n,
         in_32b_read => RGB_to_binary_stream_U0_in_32b_read,
         out_bw_din => RGB_to_binary_stream_U0_out_bw_din,
         out_bw_full_n => in_BW_stream_var_full_n,
-        out_bw_write => RGB_to_binary_stream_U0_out_bw_write,
-        start_out => RGB_to_binary_stream_U0_start_out,
-        start_write => RGB_to_binary_stream_U0_start_write);
+        out_bw_write => RGB_to_binary_stream_U0_out_bw_write);
 
-    Loop_VITIS_LOOP_56_2_proc4_U0 : component ms_Loop_VITIS_LOOP_56_2_proc4
+    Loop_VITIS_LOOP_58_2_proc4_U0 : component ms_Loop_VITIS_LOOP_58_2_proc4
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst_n_inv,
-        ap_start => Loop_VITIS_LOOP_56_2_proc4_U0_ap_start,
-        ap_done => Loop_VITIS_LOOP_56_2_proc4_U0_ap_done,
-        ap_continue => Loop_VITIS_LOOP_56_2_proc4_U0_ap_continue,
-        ap_idle => Loop_VITIS_LOOP_56_2_proc4_U0_ap_idle,
-        ap_ready => Loop_VITIS_LOOP_56_2_proc4_U0_ap_ready,
+        ap_start => Loop_VITIS_LOOP_58_2_proc4_U0_ap_start,
+        ap_done => Loop_VITIS_LOOP_58_2_proc4_U0_ap_done,
+        ap_continue => Loop_VITIS_LOOP_58_2_proc4_U0_ap_continue,
+        ap_idle => Loop_VITIS_LOOP_58_2_proc4_U0_ap_idle,
+        ap_ready => Loop_VITIS_LOOP_58_2_proc4_U0_ap_ready,
         in_BW_stream_var_dout => in_BW_stream_var_dout,
         in_BW_stream_var_empty_n => in_BW_stream_var_empty_n,
-        in_BW_stream_var_read => Loop_VITIS_LOOP_56_2_proc4_U0_in_BW_stream_var_read,
-        out_stream_TDATA => Loop_VITIS_LOOP_56_2_proc4_U0_out_stream_TDATA,
-        out_stream_TVALID => Loop_VITIS_LOOP_56_2_proc4_U0_out_stream_TVALID,
+        in_BW_stream_var_read => Loop_VITIS_LOOP_58_2_proc4_U0_in_BW_stream_var_read,
+        out_stream_TDATA => Loop_VITIS_LOOP_58_2_proc4_U0_out_stream_TDATA,
+        out_stream_TVALID => Loop_VITIS_LOOP_58_2_proc4_U0_out_stream_TVALID,
         out_stream_TREADY => out_stream_TREADY,
-        out_stream_TKEEP => Loop_VITIS_LOOP_56_2_proc4_U0_out_stream_TKEEP,
-        out_stream_TSTRB => Loop_VITIS_LOOP_56_2_proc4_U0_out_stream_TSTRB,
-        out_stream_TUSER => Loop_VITIS_LOOP_56_2_proc4_U0_out_stream_TUSER,
-        out_stream_TLAST => Loop_VITIS_LOOP_56_2_proc4_U0_out_stream_TLAST,
-        out_stream_TID => Loop_VITIS_LOOP_56_2_proc4_U0_out_stream_TID,
-        out_stream_TDEST => Loop_VITIS_LOOP_56_2_proc4_U0_out_stream_TDEST);
+        out_stream_TKEEP => Loop_VITIS_LOOP_58_2_proc4_U0_out_stream_TKEEP,
+        out_stream_TSTRB => Loop_VITIS_LOOP_58_2_proc4_U0_out_stream_TSTRB,
+        out_stream_TUSER => Loop_VITIS_LOOP_58_2_proc4_U0_out_stream_TUSER,
+        out_stream_TLAST => Loop_VITIS_LOOP_58_2_proc4_U0_out_stream_TLAST,
+        out_stream_TID => Loop_VITIS_LOOP_58_2_proc4_U0_out_stream_TID,
+        out_stream_TDEST => Loop_VITIS_LOOP_58_2_proc4_U0_out_stream_TDEST);
 
     in_raw_stream_U : component ms_fifo_w32_d2_S
     port map (
@@ -406,9 +406,9 @@ begin
         reset => ap_rst_n_inv,
         if_read_ce => ap_const_logic_1,
         if_write_ce => ap_const_logic_1,
-        if_din => Loop_VITIS_LOOP_40_1_proc3_U0_in_raw_stream_din,
+        if_din => Loop_VITIS_LOOP_42_1_proc3_U0_in_raw_stream_din,
         if_full_n => in_raw_stream_full_n,
-        if_write => Loop_VITIS_LOOP_40_1_proc3_U0_in_raw_stream_write,
+        if_write => Loop_VITIS_LOOP_42_1_proc3_U0_in_raw_stream_write,
         if_dout => in_raw_stream_dout,
         if_empty_n => in_raw_stream_empty_n,
         if_read => RGB_to_binary_stream_U0_in_32b_read);
@@ -424,7 +424,7 @@ begin
         if_write => RGB_to_binary_stream_U0_out_bw_write,
         if_dout => in_BW_stream_var_dout,
         if_empty_n => in_BW_stream_var_empty_n,
-        if_read => Loop_VITIS_LOOP_56_2_proc4_U0_in_BW_stream_var_read);
+        if_read => Loop_VITIS_LOOP_58_2_proc4_U0_in_BW_stream_var_read);
 
     start_for_RGB_to_binary_stream_U0_U : component ms_start_for_RGB_to_binary_stream_U0
     port map (
@@ -434,38 +434,38 @@ begin
         if_write_ce => ap_const_logic_1,
         if_din => start_for_RGB_to_binary_stream_U0_din,
         if_full_n => start_for_RGB_to_binary_stream_U0_full_n,
-        if_write => Loop_VITIS_LOOP_40_1_proc3_U0_start_write,
+        if_write => Loop_VITIS_LOOP_42_1_proc3_U0_start_write,
         if_dout => start_for_RGB_to_binary_stream_U0_dout,
         if_empty_n => start_for_RGB_to_binary_stream_U0_empty_n,
         if_read => RGB_to_binary_stream_U0_ap_ready);
 
-    start_for_Loop_VITIS_LOOP_56_2_proc4_U0_U : component ms_start_for_Loop_VITIS_LOOP_56_2_proc4_U0
+    start_for_Loop_VITIS_LOOP_58_2_proc4_U0_U : component ms_start_for_Loop_VITIS_LOOP_58_2_proc4_U0
     port map (
         clk => ap_clk,
         reset => ap_rst_n_inv,
         if_read_ce => ap_const_logic_1,
         if_write_ce => ap_const_logic_1,
-        if_din => start_for_Loop_VITIS_LOOP_56_2_proc4_U0_din,
-        if_full_n => start_for_Loop_VITIS_LOOP_56_2_proc4_U0_full_n,
+        if_din => start_for_Loop_VITIS_LOOP_58_2_proc4_U0_din,
+        if_full_n => start_for_Loop_VITIS_LOOP_58_2_proc4_U0_full_n,
         if_write => RGB_to_binary_stream_U0_start_write,
-        if_dout => start_for_Loop_VITIS_LOOP_56_2_proc4_U0_dout,
-        if_empty_n => start_for_Loop_VITIS_LOOP_56_2_proc4_U0_empty_n,
-        if_read => Loop_VITIS_LOOP_56_2_proc4_U0_ap_ready);
+        if_dout => start_for_Loop_VITIS_LOOP_58_2_proc4_U0_dout,
+        if_empty_n => start_for_Loop_VITIS_LOOP_58_2_proc4_U0_empty_n,
+        if_read => Loop_VITIS_LOOP_58_2_proc4_U0_ap_ready);
 
 
 
 
-    Loop_VITIS_LOOP_40_1_proc3_U0_ap_continue <= ap_const_logic_1;
-    Loop_VITIS_LOOP_40_1_proc3_U0_ap_start <= ap_start;
-    Loop_VITIS_LOOP_56_2_proc4_U0_ap_continue <= ap_const_logic_1;
-    Loop_VITIS_LOOP_56_2_proc4_U0_ap_start <= start_for_Loop_VITIS_LOOP_56_2_proc4_U0_empty_n;
-    Loop_VITIS_LOOP_56_2_proc4_U0_start_full_n <= ap_const_logic_1;
-    Loop_VITIS_LOOP_56_2_proc4_U0_start_write <= ap_const_logic_0;
+    Loop_VITIS_LOOP_42_1_proc3_U0_ap_continue <= ap_const_logic_1;
+    Loop_VITIS_LOOP_42_1_proc3_U0_ap_start <= ap_start;
+    Loop_VITIS_LOOP_58_2_proc4_U0_ap_continue <= ap_const_logic_1;
+    Loop_VITIS_LOOP_58_2_proc4_U0_ap_start <= start_for_Loop_VITIS_LOOP_58_2_proc4_U0_empty_n;
+    Loop_VITIS_LOOP_58_2_proc4_U0_start_full_n <= ap_const_logic_1;
+    Loop_VITIS_LOOP_58_2_proc4_U0_start_write <= ap_const_logic_0;
     RGB_to_binary_stream_U0_ap_continue <= ap_const_logic_1;
     RGB_to_binary_stream_U0_ap_start <= start_for_RGB_to_binary_stream_U0_empty_n;
-    ap_done <= Loop_VITIS_LOOP_56_2_proc4_U0_ap_done;
-    ap_idle <= (RGB_to_binary_stream_U0_ap_idle and Loop_VITIS_LOOP_56_2_proc4_U0_ap_idle and Loop_VITIS_LOOP_40_1_proc3_U0_ap_idle);
-    ap_ready <= Loop_VITIS_LOOP_40_1_proc3_U0_ap_ready;
+    ap_done <= Loop_VITIS_LOOP_58_2_proc4_U0_ap_done;
+    ap_idle <= (RGB_to_binary_stream_U0_ap_idle and Loop_VITIS_LOOP_58_2_proc4_U0_ap_idle and Loop_VITIS_LOOP_42_1_proc3_U0_ap_idle);
+    ap_ready <= Loop_VITIS_LOOP_42_1_proc3_U0_ap_ready;
 
     ap_rst_n_inv_assign_proc : process(ap_rst_n)
     begin
@@ -473,17 +473,17 @@ begin
     end process;
 
     ap_sync_continue <= ap_const_logic_1;
-    ap_sync_done <= Loop_VITIS_LOOP_56_2_proc4_U0_ap_done;
-    ap_sync_ready <= Loop_VITIS_LOOP_40_1_proc3_U0_ap_ready;
-    in_stream_TREADY <= Loop_VITIS_LOOP_40_1_proc3_U0_in_stream_TREADY;
-    out_stream_TDATA <= Loop_VITIS_LOOP_56_2_proc4_U0_out_stream_TDATA;
-    out_stream_TDEST <= Loop_VITIS_LOOP_56_2_proc4_U0_out_stream_TDEST;
-    out_stream_TID <= Loop_VITIS_LOOP_56_2_proc4_U0_out_stream_TID;
-    out_stream_TKEEP <= Loop_VITIS_LOOP_56_2_proc4_U0_out_stream_TKEEP;
-    out_stream_TLAST <= Loop_VITIS_LOOP_56_2_proc4_U0_out_stream_TLAST;
-    out_stream_TSTRB <= Loop_VITIS_LOOP_56_2_proc4_U0_out_stream_TSTRB;
-    out_stream_TUSER <= Loop_VITIS_LOOP_56_2_proc4_U0_out_stream_TUSER;
-    out_stream_TVALID <= Loop_VITIS_LOOP_56_2_proc4_U0_out_stream_TVALID;
-    start_for_Loop_VITIS_LOOP_56_2_proc4_U0_din <= (0=>ap_const_logic_1, others=>'-');
+    ap_sync_done <= Loop_VITIS_LOOP_58_2_proc4_U0_ap_done;
+    ap_sync_ready <= Loop_VITIS_LOOP_42_1_proc3_U0_ap_ready;
+    in_stream_TREADY <= Loop_VITIS_LOOP_42_1_proc3_U0_in_stream_TREADY;
+    out_stream_TDATA <= Loop_VITIS_LOOP_58_2_proc4_U0_out_stream_TDATA;
+    out_stream_TDEST <= Loop_VITIS_LOOP_58_2_proc4_U0_out_stream_TDEST;
+    out_stream_TID <= Loop_VITIS_LOOP_58_2_proc4_U0_out_stream_TID;
+    out_stream_TKEEP <= Loop_VITIS_LOOP_58_2_proc4_U0_out_stream_TKEEP;
+    out_stream_TLAST <= Loop_VITIS_LOOP_58_2_proc4_U0_out_stream_TLAST;
+    out_stream_TSTRB <= Loop_VITIS_LOOP_58_2_proc4_U0_out_stream_TSTRB;
+    out_stream_TUSER <= Loop_VITIS_LOOP_58_2_proc4_U0_out_stream_TUSER;
+    out_stream_TVALID <= Loop_VITIS_LOOP_58_2_proc4_U0_out_stream_TVALID;
+    start_for_Loop_VITIS_LOOP_58_2_proc4_U0_din <= (0=>ap_const_logic_1, others=>'-');
     start_for_RGB_to_binary_stream_U0_din <= (0=>ap_const_logic_1, others=>'-');
 end behav;

@@ -7,7 +7,7 @@
 
 `timescale 1 ns / 1 ps 
 
-(* CORE_GENERATION_INFO="ms_ms,hls_ip_2020_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020-clg400-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=dataflow,HLS_SYN_CLOCK=7.297000,HLS_SYN_LAT=-1,HLS_SYN_TPT=-1,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=2898,HLS_SYN_LUT=4324,HLS_VERSION=2020_2}" *)
+(* CORE_GENERATION_INFO="ms_ms,hls_ip_2020_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020-clg400-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=dataflow,HLS_SYN_CLOCK=7.297000,HLS_SYN_LAT=-1,HLS_SYN_TPT=-1,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=3046,HLS_SYN_LUT=4482,HLS_VERSION=2020_2}" *)
 
 module ms (
         s_axi_control_AWVALID,
@@ -104,40 +104,40 @@ wire    ap_start;
 wire    ap_ready;
 wire    ap_done;
 wire    ap_idle;
-wire    Loop_VITIS_LOOP_40_1_proc3_U0_ap_start;
-wire    Loop_VITIS_LOOP_40_1_proc3_U0_ap_done;
-wire    Loop_VITIS_LOOP_40_1_proc3_U0_ap_continue;
-wire    Loop_VITIS_LOOP_40_1_proc3_U0_ap_idle;
-wire    Loop_VITIS_LOOP_40_1_proc3_U0_ap_ready;
-wire    Loop_VITIS_LOOP_40_1_proc3_U0_start_out;
-wire    Loop_VITIS_LOOP_40_1_proc3_U0_start_write;
-wire    Loop_VITIS_LOOP_40_1_proc3_U0_in_stream_TREADY;
-wire   [31:0] Loop_VITIS_LOOP_40_1_proc3_U0_in_raw_stream_din;
-wire    Loop_VITIS_LOOP_40_1_proc3_U0_in_raw_stream_write;
+wire    Loop_VITIS_LOOP_42_1_proc3_U0_ap_start;
+wire    Loop_VITIS_LOOP_42_1_proc3_U0_ap_done;
+wire    Loop_VITIS_LOOP_42_1_proc3_U0_ap_continue;
+wire    Loop_VITIS_LOOP_42_1_proc3_U0_ap_idle;
+wire    Loop_VITIS_LOOP_42_1_proc3_U0_ap_ready;
+wire    Loop_VITIS_LOOP_42_1_proc3_U0_start_out;
+wire    Loop_VITIS_LOOP_42_1_proc3_U0_start_write;
+wire    Loop_VITIS_LOOP_42_1_proc3_U0_in_stream_TREADY;
+wire   [31:0] Loop_VITIS_LOOP_42_1_proc3_U0_in_raw_stream_din;
+wire    Loop_VITIS_LOOP_42_1_proc3_U0_in_raw_stream_write;
 wire    RGB_to_binary_stream_U0_ap_start;
 wire    RGB_to_binary_stream_U0_ap_done;
 wire    RGB_to_binary_stream_U0_ap_continue;
 wire    RGB_to_binary_stream_U0_ap_idle;
 wire    RGB_to_binary_stream_U0_ap_ready;
+wire    RGB_to_binary_stream_U0_start_out;
+wire    RGB_to_binary_stream_U0_start_write;
 wire    RGB_to_binary_stream_U0_in_32b_read;
 wire   [15:0] RGB_to_binary_stream_U0_out_bw_din;
 wire    RGB_to_binary_stream_U0_out_bw_write;
-wire    RGB_to_binary_stream_U0_start_out;
-wire    RGB_to_binary_stream_U0_start_write;
-wire    Loop_VITIS_LOOP_56_2_proc4_U0_ap_start;
-wire    Loop_VITIS_LOOP_56_2_proc4_U0_ap_done;
-wire    Loop_VITIS_LOOP_56_2_proc4_U0_ap_continue;
-wire    Loop_VITIS_LOOP_56_2_proc4_U0_ap_idle;
-wire    Loop_VITIS_LOOP_56_2_proc4_U0_ap_ready;
-wire    Loop_VITIS_LOOP_56_2_proc4_U0_in_BW_stream_var_read;
-wire   [31:0] Loop_VITIS_LOOP_56_2_proc4_U0_out_stream_TDATA;
-wire    Loop_VITIS_LOOP_56_2_proc4_U0_out_stream_TVALID;
-wire   [3:0] Loop_VITIS_LOOP_56_2_proc4_U0_out_stream_TKEEP;
-wire   [3:0] Loop_VITIS_LOOP_56_2_proc4_U0_out_stream_TSTRB;
-wire   [1:0] Loop_VITIS_LOOP_56_2_proc4_U0_out_stream_TUSER;
-wire   [0:0] Loop_VITIS_LOOP_56_2_proc4_U0_out_stream_TLAST;
-wire   [4:0] Loop_VITIS_LOOP_56_2_proc4_U0_out_stream_TID;
-wire   [5:0] Loop_VITIS_LOOP_56_2_proc4_U0_out_stream_TDEST;
+wire    Loop_VITIS_LOOP_58_2_proc4_U0_ap_start;
+wire    Loop_VITIS_LOOP_58_2_proc4_U0_ap_done;
+wire    Loop_VITIS_LOOP_58_2_proc4_U0_ap_continue;
+wire    Loop_VITIS_LOOP_58_2_proc4_U0_ap_idle;
+wire    Loop_VITIS_LOOP_58_2_proc4_U0_ap_ready;
+wire    Loop_VITIS_LOOP_58_2_proc4_U0_in_BW_stream_var_read;
+wire   [31:0] Loop_VITIS_LOOP_58_2_proc4_U0_out_stream_TDATA;
+wire    Loop_VITIS_LOOP_58_2_proc4_U0_out_stream_TVALID;
+wire   [3:0] Loop_VITIS_LOOP_58_2_proc4_U0_out_stream_TKEEP;
+wire   [3:0] Loop_VITIS_LOOP_58_2_proc4_U0_out_stream_TSTRB;
+wire   [1:0] Loop_VITIS_LOOP_58_2_proc4_U0_out_stream_TUSER;
+wire   [0:0] Loop_VITIS_LOOP_58_2_proc4_U0_out_stream_TLAST;
+wire   [4:0] Loop_VITIS_LOOP_58_2_proc4_U0_out_stream_TID;
+wire   [5:0] Loop_VITIS_LOOP_58_2_proc4_U0_out_stream_TDEST;
 wire    ap_sync_continue;
 wire    in_raw_stream_full_n;
 wire   [31:0] in_raw_stream_dout;
@@ -151,12 +151,12 @@ wire   [0:0] start_for_RGB_to_binary_stream_U0_din;
 wire    start_for_RGB_to_binary_stream_U0_full_n;
 wire   [0:0] start_for_RGB_to_binary_stream_U0_dout;
 wire    start_for_RGB_to_binary_stream_U0_empty_n;
-wire   [0:0] start_for_Loop_VITIS_LOOP_56_2_proc4_U0_din;
-wire    start_for_Loop_VITIS_LOOP_56_2_proc4_U0_full_n;
-wire   [0:0] start_for_Loop_VITIS_LOOP_56_2_proc4_U0_dout;
-wire    start_for_Loop_VITIS_LOOP_56_2_proc4_U0_empty_n;
-wire    Loop_VITIS_LOOP_56_2_proc4_U0_start_full_n;
-wire    Loop_VITIS_LOOP_56_2_proc4_U0_start_write;
+wire   [0:0] start_for_Loop_VITIS_LOOP_58_2_proc4_U0_din;
+wire    start_for_Loop_VITIS_LOOP_58_2_proc4_U0_full_n;
+wire   [0:0] start_for_Loop_VITIS_LOOP_58_2_proc4_U0_dout;
+wire    start_for_Loop_VITIS_LOOP_58_2_proc4_U0_empty_n;
+wire    Loop_VITIS_LOOP_58_2_proc4_U0_start_full_n;
+wire    Loop_VITIS_LOOP_58_2_proc4_U0_start_write;
 
 ms_control_s_axi #(
     .C_S_AXI_ADDR_WIDTH( C_S_AXI_CONTROL_ADDR_WIDTH ),
@@ -191,70 +191,70 @@ control_s_axi_U(
     .ap_idle(ap_idle)
 );
 
-ms_Loop_VITIS_LOOP_40_1_proc3 Loop_VITIS_LOOP_40_1_proc3_U0(
+ms_Loop_VITIS_LOOP_42_1_proc3 Loop_VITIS_LOOP_42_1_proc3_U0(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
-    .ap_start(Loop_VITIS_LOOP_40_1_proc3_U0_ap_start),
+    .ap_start(Loop_VITIS_LOOP_42_1_proc3_U0_ap_start),
     .start_full_n(start_for_RGB_to_binary_stream_U0_full_n),
-    .ap_done(Loop_VITIS_LOOP_40_1_proc3_U0_ap_done),
-    .ap_continue(Loop_VITIS_LOOP_40_1_proc3_U0_ap_continue),
-    .ap_idle(Loop_VITIS_LOOP_40_1_proc3_U0_ap_idle),
-    .ap_ready(Loop_VITIS_LOOP_40_1_proc3_U0_ap_ready),
-    .start_out(Loop_VITIS_LOOP_40_1_proc3_U0_start_out),
-    .start_write(Loop_VITIS_LOOP_40_1_proc3_U0_start_write),
+    .ap_done(Loop_VITIS_LOOP_42_1_proc3_U0_ap_done),
+    .ap_continue(Loop_VITIS_LOOP_42_1_proc3_U0_ap_continue),
+    .ap_idle(Loop_VITIS_LOOP_42_1_proc3_U0_ap_idle),
+    .ap_ready(Loop_VITIS_LOOP_42_1_proc3_U0_ap_ready),
+    .start_out(Loop_VITIS_LOOP_42_1_proc3_U0_start_out),
+    .start_write(Loop_VITIS_LOOP_42_1_proc3_U0_start_write),
     .in_stream_TDATA(in_stream_TDATA),
     .in_stream_TVALID(in_stream_TVALID),
-    .in_stream_TREADY(Loop_VITIS_LOOP_40_1_proc3_U0_in_stream_TREADY),
+    .in_stream_TREADY(Loop_VITIS_LOOP_42_1_proc3_U0_in_stream_TREADY),
     .in_stream_TKEEP(in_stream_TKEEP),
     .in_stream_TSTRB(in_stream_TSTRB),
     .in_stream_TUSER(in_stream_TUSER),
     .in_stream_TLAST(in_stream_TLAST),
     .in_stream_TID(in_stream_TID),
     .in_stream_TDEST(in_stream_TDEST),
-    .in_raw_stream_din(Loop_VITIS_LOOP_40_1_proc3_U0_in_raw_stream_din),
+    .in_raw_stream_din(Loop_VITIS_LOOP_42_1_proc3_U0_in_raw_stream_din),
     .in_raw_stream_full_n(in_raw_stream_full_n),
-    .in_raw_stream_write(Loop_VITIS_LOOP_40_1_proc3_U0_in_raw_stream_write)
+    .in_raw_stream_write(Loop_VITIS_LOOP_42_1_proc3_U0_in_raw_stream_write)
 );
 
 ms_RGB_to_binary_stream RGB_to_binary_stream_U0(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
     .ap_start(RGB_to_binary_stream_U0_ap_start),
-    .start_full_n(start_for_Loop_VITIS_LOOP_56_2_proc4_U0_full_n),
+    .start_full_n(start_for_Loop_VITIS_LOOP_58_2_proc4_U0_full_n),
     .ap_done(RGB_to_binary_stream_U0_ap_done),
     .ap_continue(RGB_to_binary_stream_U0_ap_continue),
     .ap_idle(RGB_to_binary_stream_U0_ap_idle),
     .ap_ready(RGB_to_binary_stream_U0_ap_ready),
+    .start_out(RGB_to_binary_stream_U0_start_out),
+    .start_write(RGB_to_binary_stream_U0_start_write),
     .in_32b_dout(in_raw_stream_dout),
     .in_32b_empty_n(in_raw_stream_empty_n),
     .in_32b_read(RGB_to_binary_stream_U0_in_32b_read),
     .out_bw_din(RGB_to_binary_stream_U0_out_bw_din),
     .out_bw_full_n(in_BW_stream_var_full_n),
-    .out_bw_write(RGB_to_binary_stream_U0_out_bw_write),
-    .start_out(RGB_to_binary_stream_U0_start_out),
-    .start_write(RGB_to_binary_stream_U0_start_write)
+    .out_bw_write(RGB_to_binary_stream_U0_out_bw_write)
 );
 
-ms_Loop_VITIS_LOOP_56_2_proc4 Loop_VITIS_LOOP_56_2_proc4_U0(
+ms_Loop_VITIS_LOOP_58_2_proc4 Loop_VITIS_LOOP_58_2_proc4_U0(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
-    .ap_start(Loop_VITIS_LOOP_56_2_proc4_U0_ap_start),
-    .ap_done(Loop_VITIS_LOOP_56_2_proc4_U0_ap_done),
-    .ap_continue(Loop_VITIS_LOOP_56_2_proc4_U0_ap_continue),
-    .ap_idle(Loop_VITIS_LOOP_56_2_proc4_U0_ap_idle),
-    .ap_ready(Loop_VITIS_LOOP_56_2_proc4_U0_ap_ready),
+    .ap_start(Loop_VITIS_LOOP_58_2_proc4_U0_ap_start),
+    .ap_done(Loop_VITIS_LOOP_58_2_proc4_U0_ap_done),
+    .ap_continue(Loop_VITIS_LOOP_58_2_proc4_U0_ap_continue),
+    .ap_idle(Loop_VITIS_LOOP_58_2_proc4_U0_ap_idle),
+    .ap_ready(Loop_VITIS_LOOP_58_2_proc4_U0_ap_ready),
     .in_BW_stream_var_dout(in_BW_stream_var_dout),
     .in_BW_stream_var_empty_n(in_BW_stream_var_empty_n),
-    .in_BW_stream_var_read(Loop_VITIS_LOOP_56_2_proc4_U0_in_BW_stream_var_read),
-    .out_stream_TDATA(Loop_VITIS_LOOP_56_2_proc4_U0_out_stream_TDATA),
-    .out_stream_TVALID(Loop_VITIS_LOOP_56_2_proc4_U0_out_stream_TVALID),
+    .in_BW_stream_var_read(Loop_VITIS_LOOP_58_2_proc4_U0_in_BW_stream_var_read),
+    .out_stream_TDATA(Loop_VITIS_LOOP_58_2_proc4_U0_out_stream_TDATA),
+    .out_stream_TVALID(Loop_VITIS_LOOP_58_2_proc4_U0_out_stream_TVALID),
     .out_stream_TREADY(out_stream_TREADY),
-    .out_stream_TKEEP(Loop_VITIS_LOOP_56_2_proc4_U0_out_stream_TKEEP),
-    .out_stream_TSTRB(Loop_VITIS_LOOP_56_2_proc4_U0_out_stream_TSTRB),
-    .out_stream_TUSER(Loop_VITIS_LOOP_56_2_proc4_U0_out_stream_TUSER),
-    .out_stream_TLAST(Loop_VITIS_LOOP_56_2_proc4_U0_out_stream_TLAST),
-    .out_stream_TID(Loop_VITIS_LOOP_56_2_proc4_U0_out_stream_TID),
-    .out_stream_TDEST(Loop_VITIS_LOOP_56_2_proc4_U0_out_stream_TDEST)
+    .out_stream_TKEEP(Loop_VITIS_LOOP_58_2_proc4_U0_out_stream_TKEEP),
+    .out_stream_TSTRB(Loop_VITIS_LOOP_58_2_proc4_U0_out_stream_TSTRB),
+    .out_stream_TUSER(Loop_VITIS_LOOP_58_2_proc4_U0_out_stream_TUSER),
+    .out_stream_TLAST(Loop_VITIS_LOOP_58_2_proc4_U0_out_stream_TLAST),
+    .out_stream_TID(Loop_VITIS_LOOP_58_2_proc4_U0_out_stream_TID),
+    .out_stream_TDEST(Loop_VITIS_LOOP_58_2_proc4_U0_out_stream_TDEST)
 );
 
 ms_fifo_w32_d2_S in_raw_stream_U(
@@ -262,9 +262,9 @@ ms_fifo_w32_d2_S in_raw_stream_U(
     .reset(ap_rst_n_inv),
     .if_read_ce(1'b1),
     .if_write_ce(1'b1),
-    .if_din(Loop_VITIS_LOOP_40_1_proc3_U0_in_raw_stream_din),
+    .if_din(Loop_VITIS_LOOP_42_1_proc3_U0_in_raw_stream_din),
     .if_full_n(in_raw_stream_full_n),
-    .if_write(Loop_VITIS_LOOP_40_1_proc3_U0_in_raw_stream_write),
+    .if_write(Loop_VITIS_LOOP_42_1_proc3_U0_in_raw_stream_write),
     .if_dout(in_raw_stream_dout),
     .if_empty_n(in_raw_stream_empty_n),
     .if_read(RGB_to_binary_stream_U0_in_32b_read)
@@ -280,7 +280,7 @@ ms_fifo_w16_d2_S in_BW_stream_var_U(
     .if_write(RGB_to_binary_stream_U0_out_bw_write),
     .if_dout(in_BW_stream_var_dout),
     .if_empty_n(in_BW_stream_var_empty_n),
-    .if_read(Loop_VITIS_LOOP_56_2_proc4_U0_in_BW_stream_var_read)
+    .if_read(Loop_VITIS_LOOP_58_2_proc4_U0_in_BW_stream_var_read)
 );
 
 ms_start_for_RGB_to_binary_stream_U0 start_for_RGB_to_binary_stream_U0_U(
@@ -290,46 +290,46 @@ ms_start_for_RGB_to_binary_stream_U0 start_for_RGB_to_binary_stream_U0_U(
     .if_write_ce(1'b1),
     .if_din(start_for_RGB_to_binary_stream_U0_din),
     .if_full_n(start_for_RGB_to_binary_stream_U0_full_n),
-    .if_write(Loop_VITIS_LOOP_40_1_proc3_U0_start_write),
+    .if_write(Loop_VITIS_LOOP_42_1_proc3_U0_start_write),
     .if_dout(start_for_RGB_to_binary_stream_U0_dout),
     .if_empty_n(start_for_RGB_to_binary_stream_U0_empty_n),
     .if_read(RGB_to_binary_stream_U0_ap_ready)
 );
 
-ms_start_for_Loop_VITIS_LOOP_56_2_proc4_U0 start_for_Loop_VITIS_LOOP_56_2_proc4_U0_U(
+ms_start_for_Loop_VITIS_LOOP_58_2_proc4_U0 start_for_Loop_VITIS_LOOP_58_2_proc4_U0_U(
     .clk(ap_clk),
     .reset(ap_rst_n_inv),
     .if_read_ce(1'b1),
     .if_write_ce(1'b1),
-    .if_din(start_for_Loop_VITIS_LOOP_56_2_proc4_U0_din),
-    .if_full_n(start_for_Loop_VITIS_LOOP_56_2_proc4_U0_full_n),
+    .if_din(start_for_Loop_VITIS_LOOP_58_2_proc4_U0_din),
+    .if_full_n(start_for_Loop_VITIS_LOOP_58_2_proc4_U0_full_n),
     .if_write(RGB_to_binary_stream_U0_start_write),
-    .if_dout(start_for_Loop_VITIS_LOOP_56_2_proc4_U0_dout),
-    .if_empty_n(start_for_Loop_VITIS_LOOP_56_2_proc4_U0_empty_n),
-    .if_read(Loop_VITIS_LOOP_56_2_proc4_U0_ap_ready)
+    .if_dout(start_for_Loop_VITIS_LOOP_58_2_proc4_U0_dout),
+    .if_empty_n(start_for_Loop_VITIS_LOOP_58_2_proc4_U0_empty_n),
+    .if_read(Loop_VITIS_LOOP_58_2_proc4_U0_ap_ready)
 );
 
-assign Loop_VITIS_LOOP_40_1_proc3_U0_ap_continue = 1'b1;
+assign Loop_VITIS_LOOP_42_1_proc3_U0_ap_continue = 1'b1;
 
-assign Loop_VITIS_LOOP_40_1_proc3_U0_ap_start = ap_start;
+assign Loop_VITIS_LOOP_42_1_proc3_U0_ap_start = ap_start;
 
-assign Loop_VITIS_LOOP_56_2_proc4_U0_ap_continue = 1'b1;
+assign Loop_VITIS_LOOP_58_2_proc4_U0_ap_continue = 1'b1;
 
-assign Loop_VITIS_LOOP_56_2_proc4_U0_ap_start = start_for_Loop_VITIS_LOOP_56_2_proc4_U0_empty_n;
+assign Loop_VITIS_LOOP_58_2_proc4_U0_ap_start = start_for_Loop_VITIS_LOOP_58_2_proc4_U0_empty_n;
 
-assign Loop_VITIS_LOOP_56_2_proc4_U0_start_full_n = 1'b1;
+assign Loop_VITIS_LOOP_58_2_proc4_U0_start_full_n = 1'b1;
 
-assign Loop_VITIS_LOOP_56_2_proc4_U0_start_write = 1'b0;
+assign Loop_VITIS_LOOP_58_2_proc4_U0_start_write = 1'b0;
 
 assign RGB_to_binary_stream_U0_ap_continue = 1'b1;
 
 assign RGB_to_binary_stream_U0_ap_start = start_for_RGB_to_binary_stream_U0_empty_n;
 
-assign ap_done = Loop_VITIS_LOOP_56_2_proc4_U0_ap_done;
+assign ap_done = Loop_VITIS_LOOP_58_2_proc4_U0_ap_done;
 
-assign ap_idle = (RGB_to_binary_stream_U0_ap_idle & Loop_VITIS_LOOP_56_2_proc4_U0_ap_idle & Loop_VITIS_LOOP_40_1_proc3_U0_ap_idle);
+assign ap_idle = (RGB_to_binary_stream_U0_ap_idle & Loop_VITIS_LOOP_58_2_proc4_U0_ap_idle & Loop_VITIS_LOOP_42_1_proc3_U0_ap_idle);
 
-assign ap_ready = Loop_VITIS_LOOP_40_1_proc3_U0_ap_ready;
+assign ap_ready = Loop_VITIS_LOOP_42_1_proc3_U0_ap_ready;
 
 always @ (*) begin
     ap_rst_n_inv = ~ap_rst_n;
@@ -337,29 +337,29 @@ end
 
 assign ap_sync_continue = 1'b1;
 
-assign ap_sync_done = Loop_VITIS_LOOP_56_2_proc4_U0_ap_done;
+assign ap_sync_done = Loop_VITIS_LOOP_58_2_proc4_U0_ap_done;
 
-assign ap_sync_ready = Loop_VITIS_LOOP_40_1_proc3_U0_ap_ready;
+assign ap_sync_ready = Loop_VITIS_LOOP_42_1_proc3_U0_ap_ready;
 
-assign in_stream_TREADY = Loop_VITIS_LOOP_40_1_proc3_U0_in_stream_TREADY;
+assign in_stream_TREADY = Loop_VITIS_LOOP_42_1_proc3_U0_in_stream_TREADY;
 
-assign out_stream_TDATA = Loop_VITIS_LOOP_56_2_proc4_U0_out_stream_TDATA;
+assign out_stream_TDATA = Loop_VITIS_LOOP_58_2_proc4_U0_out_stream_TDATA;
 
-assign out_stream_TDEST = Loop_VITIS_LOOP_56_2_proc4_U0_out_stream_TDEST;
+assign out_stream_TDEST = Loop_VITIS_LOOP_58_2_proc4_U0_out_stream_TDEST;
 
-assign out_stream_TID = Loop_VITIS_LOOP_56_2_proc4_U0_out_stream_TID;
+assign out_stream_TID = Loop_VITIS_LOOP_58_2_proc4_U0_out_stream_TID;
 
-assign out_stream_TKEEP = Loop_VITIS_LOOP_56_2_proc4_U0_out_stream_TKEEP;
+assign out_stream_TKEEP = Loop_VITIS_LOOP_58_2_proc4_U0_out_stream_TKEEP;
 
-assign out_stream_TLAST = Loop_VITIS_LOOP_56_2_proc4_U0_out_stream_TLAST;
+assign out_stream_TLAST = Loop_VITIS_LOOP_58_2_proc4_U0_out_stream_TLAST;
 
-assign out_stream_TSTRB = Loop_VITIS_LOOP_56_2_proc4_U0_out_stream_TSTRB;
+assign out_stream_TSTRB = Loop_VITIS_LOOP_58_2_proc4_U0_out_stream_TSTRB;
 
-assign out_stream_TUSER = Loop_VITIS_LOOP_56_2_proc4_U0_out_stream_TUSER;
+assign out_stream_TUSER = Loop_VITIS_LOOP_58_2_proc4_U0_out_stream_TUSER;
 
-assign out_stream_TVALID = Loop_VITIS_LOOP_56_2_proc4_U0_out_stream_TVALID;
+assign out_stream_TVALID = Loop_VITIS_LOOP_58_2_proc4_U0_out_stream_TVALID;
 
-assign start_for_Loop_VITIS_LOOP_56_2_proc4_U0_din = 1'b1;
+assign start_for_Loop_VITIS_LOOP_58_2_proc4_U0_din = 1'b1;
 
 assign start_for_RGB_to_binary_stream_U0_din = 1'b1;
 

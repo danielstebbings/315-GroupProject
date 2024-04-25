@@ -10,9 +10,9 @@
 void RGB_to_binary_stream( hls::stream<ap_uint<32>> &in_32b,
 						   hls::stream<BW_pixel_struct>	&out_bw
 						   ) {
-#pragma HLS pipeline II=1
 	BW_pixel_struct temp_BW_pkt;
-	for(int pixel=0;pixel<IMG_WIDTH*IMG_HEIGHT;pixel++) {
+	BW_LOOP:for(int pixel=0;pixel<IMG_WIDTH*IMG_HEIGHT;pixel++) {
+#pragma HLS unroll factor=1
 			//converting input
 			ap_int<32> in_32b_tmp;
 			in_32b_tmp = in_32b.read();
@@ -20,7 +20,7 @@ void RGB_to_binary_stream( hls::stream<ap_uint<32>> &in_32b,
 			grey_pixel_t in_grey  = RGB_to_greyscale(in_RGB);
 			BW_pixel_t   in_BW	  = greyscale_to_BW(in_grey);
 			temp_BW_pkt.pix = in_BW;
-			if (pixel = IMG_WIDTH*IMG_HEIGHT-1) {
+			if (pixel == IMG_WIDTH*IMG_HEIGHT-1) {
 				temp_BW_pkt.last = true;
 			}
 			else {

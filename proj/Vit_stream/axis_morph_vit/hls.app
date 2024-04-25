@@ -1,8 +1,8 @@
-<project xmlns="com.autoesl.autopilot.project" top="ms" name="axis_morph_vit">
+<project xmlns="com.autoesl.autopilot.project" name="axis_morph_vit" top="ms">
     <includePaths/>
     <libraryPaths/>
     <Simulation>
-        <SimFlow name="csim" csimMode="0" lastCsimMode="0"/>
+        <SimFlow name="csim" clean="true" csimMode="0" lastCsimMode="0"/>
     </Simulation>
     <files xmlns="">
         <file name="../../axis_morph_tb" sc="0" tb="1" cflags=" -Wno-unknown-pragmas" csimflags=" -Wno-unknown-pragmas" blackbox="false"/>

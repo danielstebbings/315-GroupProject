@@ -10,3 +10,5 @@ proj/Viting/Morph/.apc
 *.dmp
 proj/Vit_stream/axis_morph_vit/.apc
 proj/Vit_stream/axis_morph_vit/.settings
+proj/Vit_stream/axis_morph_vit/ms/.autopilot
+proj/Vit_stream/axis_morph_vit/ms/syn
