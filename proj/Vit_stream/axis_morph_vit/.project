@@ -37,19 +37,9 @@
 			<location>C:/Xil_proj/315/proj/Vit_stream/axis_morph_vit/.apc/.tb</location>
 		</link>
 		<link>
-			<name>.reference/ap_axi_sdata.h</name>
+			<name>.reference/ap_int_base.h</name>
 			<type>1</type>
-			<location>C:/Xilinx/Vitis_HLS/2020.2/include/ap_axi_sdata.h</location>
-		</link>
-		<link>
-			<name>.reference/hls_stream.h</name>
-			<type>1</type>
-			<location>C:/Xilinx/Vitis_HLS/2020.2/include/hls_stream.h</location>
-		</link>
-		<link>
-			<name>.reference/hls_stream_thread_safe.h</name>
-			<type>1</type>
-			<location>C:/Xilinx/Vitis_HLS/2020.2/include/hls_stream_thread_safe.h</location>
+			<location>C:/Xilinx/Vitis_HLS/2020.2/include/ap_int_base.h</location>
 		</link>
 		<link>
 			<name>.reference/hls_stream_thread_unsafe.h</name>
@@ -57,9 +47,9 @@
 			<location>C:/Xilinx/Vitis_HLS/2020.2/include/hls_stream_thread_unsafe.h</location>
 		</link>
 		<link>
-			<name>morph_stream/constraints</name>
+			<name>ms/constraints</name>
 			<type>2</type>
-			<location>C:/Xil_proj/315/proj/Vit_stream/axis_morph_vit/morph_stream/.tcls</location>
+			<location>C:/Xil_proj/315/proj/Vit_stream/axis_morph_vit/ms/.tcls</location>
 		</link>
 		<link>
 			<name>source/BW_Stream_generator.cpp</name>
@@ -107,19 +97,34 @@
 			<location>C:/Xil_proj/315/proj/Vit_stream/morph_stream_utils.h</location>
 		</link>
 		<link>
-			<name>morph_stream/constraints/.xml.directive</name>
-			<type>1</type>
-			<location>C:/Xil_proj/315/proj/Vit_stream/axis_morph_vit/morph_stream/morph_stream.directive</location>
+			<name>testbench/axis_morph_tb</name>
+			<type>2</type>
+			<location>C:/Xil_proj/315/proj/Vit_stream/axis_morph_tb</location>
 		</link>
 		<link>
-			<name>morph_stream/constraints/directives.tcl</name>
+			<name>testbench/tb.cpp</name>
 			<type>1</type>
-			<location>C:/Xil_proj/315/proj/Vit_stream/axis_morph_vit/morph_stream/directives.tcl</location>
+			<location>C:/Xil_proj/315/proj/Vit_stream/tb.cpp</location>
 		</link>
 		<link>
-			<name>morph_stream/constraints/script.tcl</name>
+			<name>testbench/tb.h</name>
 			<type>1</type>
-			<location>C:/Xil_proj/315/proj/Vit_stream/axis_morph_vit/morph_stream/script.tcl</location>
+			<location>C:/Xil_proj/315/proj/Vit_stream/tb.h</location>
+		</link>
+		<link>
+			<name>ms/constraints/.xml.directive</name>
+			<type>1</type>
+			<location>C:/Xil_proj/315/proj/Vit_stream/axis_morph_vit/ms/ms.directive</location>
+		</link>
+		<link>
+			<name>ms/constraints/directives.tcl</name>
+			<type>1</type>
+			<location>C:/Xil_proj/315/proj/Vit_stream/axis_morph_vit/ms/directives.tcl</location>
+		</link>
+		<link>
+			<name>ms/constraints/script.tcl</name>
+			<type>1</type>
+			<location>C:/Xil_proj/315/proj/Vit_stream/axis_morph_vit/ms/script.tcl</location>
 		</link>
 	</linkedResources>
 </projectDescription>

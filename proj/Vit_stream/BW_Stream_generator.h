@@ -10,13 +10,14 @@
 #include "hls_stream.h"
 #include "ap_axi_sdata.h"
 #include "morph_stream_utils.h"
+#include "ap_int.h"
 
 
 
 //defines
 
 //functions
-void RGB_to_binary_stream( hls::stream< ap_axis<32,2,5,6> > &in_32b,
-						   hls::stream<BW_pixel_t>          &out_bw
+void RGB_to_binary_stream( hls::stream<ap_uint<32>> &in_32b,
+						   hls::stream<BW_pixel_struct>	&out_bw
 						   );
 
