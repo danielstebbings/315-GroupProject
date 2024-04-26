@@ -1,0 +1,8 @@
+OPTION psf_version = 2.1;
+BEGIN driver axi_stream_morphing_backup2
+ OPTION supported_peripherals = (axi_stream_morphing_backup2_v1_0);
+ OPTION driver_state = ACTIVE;
+ OPTION copyfiles = all;
+ OPTION name = axi_stream_morphing_backup2;
+ OPTION version = 1.0;
+END driver
