@@ -46,7 +46,7 @@ void ms( stream_32 			 &in_stream,
 	} while (!temp_in_packet.last);
 
 	RGB_to_binary_stream(in_raw_stream, in_BW_stream_var); //take in in_stream, convert to binary, output on BW_stream
-	//window_stream(BW_stream_var,window_stream_var);
+	//window_stream(in_BW_stream_var,window_stream_var);
 
 	//conv2d_stream_BW(window_stream_var, //windows in
 		//			 out_BW_stream_var, //BW pixels out

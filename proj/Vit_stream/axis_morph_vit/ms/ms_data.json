@@ -749,10 +749,10 @@
       },
       "RGB_to_binary_stream": {
         "Latency": {
-          "LatencyBest": "2073633",
-          "LatencyAvg": "2073633",
-          "LatencyWorst": "2073633",
-          "PipelineII": "2073633",
+          "LatencyBest": "2079637",
+          "LatencyAvg": "2079637",
+          "LatencyWorst": "2079637",
+          "PipelineII": "2079637",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
@@ -763,8 +763,8 @@
         },
         "Loops": [{
             "Name": "BW_LOOP",
-            "TripCount": "2073600",
-            "Latency": "2073631",
+            "TripCount": "2079604",
+            "Latency": "2079635",
             "PipelineII": "1",
             "PipelineDepth": "33"
           }],
@@ -862,7 +862,7 @@
   "GenerateBdFiles": "1",
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2020-04-25 19:49:49 +0100",
+    "Time": "2020-04-25 21:05:54 +0100",
     "ToolName": "vivado_hls",
     "ToolVersion": "2020.2"
   }

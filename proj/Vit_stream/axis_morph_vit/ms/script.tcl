@@ -25,4 +25,4 @@ source "./axis_morph_vit/ms/directives.tcl"
 csim_design -clean
 csynth_design
 cosim_design
-export_design -rtl verilog -format ip_catalog -output C:/Xil_proj/315/proj/IP/ms/msV1.1
+export_design -rtl verilog -format ip_catalog -output C:/Xil_proj/315/proj/IP/ms/msV1.2

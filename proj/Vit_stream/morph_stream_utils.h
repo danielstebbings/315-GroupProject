@@ -14,10 +14,10 @@
 #define WINDOW_SIZE   3
 #endif
 #ifndef IMG_WIDTH
-#define IMG_WIDTH	1920
+#define IMG_WIDTH	1922
 #endif
 #ifndef IMG_HEIGHT
-#define IMG_HEIGHT	1080
+#define IMG_HEIGHT	1082
 #endif
 #ifndef PIXEL_SIZE
 #define PIXEL_SIZE	 24

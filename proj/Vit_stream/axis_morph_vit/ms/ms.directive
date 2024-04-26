@@ -5,26 +5,6 @@
                 <option name="name" value="ms"/>
             </pragma>
         </directive>
-        <directive functionName="ms" label="" functionLabel="">
-            <pragma name="TOP">
-                <option name="name" value="ms"/>
-            </pragma>
-        </directive>
-        <directive functionName="ms" label="" functionLabel="">
-            <pragma name="TOP">
-                <option name="name" value="ms"/>
-            </pragma>
-        </directive>
-        <directive functionName="ms" label="" functionLabel="">
-            <pragma name="TOP">
-                <option name="name" value="ms"/>
-            </pragma>
-        </directive>
-        <directive functionName="ms" label="" functionLabel="">
-            <pragma name="TOP">
-                <option name="name" value="ms"/>
-            </pragma>
-        </directive>
     </sourceFile>
 </AutoPilot:ProjectResources>
 
